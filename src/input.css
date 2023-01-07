@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body[data-nav="true"] > #moveUp{
+    transform: translateY(-50%);
+}
+
+body:not([data-nav="true"]) > #nav-toggle:hover > #open {
+    opacity: 1 !important;
+    transform: translate(-50%,-50%) scale(2);
+}
+
+body[data-nav="true"] > #nav-toggle > #close {
+    opacity: 1 !important;
+    transform: translate(-50%,-50%) scale(2);
+}
+
+
+
+@media (max-width:640px) {
+    .slide{
+        animation-name: movx;
+    }    
+}
+@media (min-width:640px) {
+    .slide{
+        animation-name: movy;
+    }
+}
+.slide{
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+  @keyframes movy {
+    from { transform: translateY(0%) ;}
+    to { transform: translateY(-50%) ;}
+}
+
+@keyframes movx {
+    from { transform: translateX(0%) ;}
+    to { transform: translateX(-400%) ;}
+}
