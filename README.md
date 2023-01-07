@@ -1,6 +1,3 @@
-this is the readme file of akira valade's portfolio
-README.md:
-
 # portfolio
 Portfolio akira valade
 
