@@ -7,6 +7,10 @@
 body[data-nav="true"] > #moveUp{
     transform: translateY(-50%);
 }
+body[data-nav="true"] > #menu{
+    transform: translateY(-50%) scale(1);
+}
+
 
 body:not([data-nav="true"]) > #nav-toggle:hover > #open {
     opacity: 1 !important;
