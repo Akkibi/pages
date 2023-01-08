@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face{
+    font-family: "whytebld";
+    src: url(/fonts/WhyteInktrap-Black.ttf);
+}
+
+@font-face{
+    font-family: "whyte";
+    src: url(/fonts/WhyteInktrap-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.grid-gradient{
+    background-size: 40px 40px;
+    background-image:
+    linear-gradient(to right, white 2px, transparent 2px),
+    linear-gradient(to bottom,white 2px, transparent 2px);
+}
+
+
+
+
+.reg-whyte{
+    font-family: "whyte";
+}
+.bld-whyte{
+    font-family: "whytebld";
+}
+
+
+@layer base {
+    html {
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+
+
+::-webkit-scrollbar{
+    width: 1em;
+    height: 1em;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+    }
+::-webkit-scrollbar-thumb {
+    border: 2px solid black ;
+    border-radius: 100vw;
+    background-color: #001382;
+}
+::-webkit-scrollbar-thumb:hover {
+    border: 2px solid black ;
+    background-color: white;
+}
 
 
 body[data-nav="true"] > #moveUp{

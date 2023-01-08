@@ -45,72 +45,128 @@
       content="https://pbs.twimg.com/media/FhG4fKrX0AAGoc1?format=jpg&name=large"
     />
 
-    <link rel="shortcut icon" href="/build/public/favicon.ico" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="icon" href="favicon.ico?v=1.1" />
 
-    <link rel="stylesheet" href="/build/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="m-0 h-screen w-screen overflow-hidden bg-black" data-nav="false">
+    <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
+      <img
+        class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
+        src="/public/gradient.png"
+      />
+      <div class="absolute inset-0 m-0 h-full border-2 border-blue-1000"></div>
+    </div>
+    <!-- menu -->
     <ul
       id="menu"
-      class="absolute top-[75%] flex translate-y-[50%] scale-75 flex-row flex-wrap items-center justify-center py-4 duration-500"
+      class="absolute top-[75%] flex translate-y-[-50%] flex-row flex-wrap items-center justify-center px-4"
     >
       <a
-        href="/build/index.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/index.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[10vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
           HOME
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/home.png"
+          src="/public/home.png"
           alt="Home"
         />
       </a>
 
       <a
-        href="/build/pages/all-work.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/all-work.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[6vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:top-[0%] sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
-          ALL WORK
+          WORK
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/work.png"
+          src="/public/work.png"
           alt="Home"
         />
       </a>
 
       <a
-        href="/build/pages/About.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/About.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[10vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
           ABOUT
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/about.png"
+          src="/public/about.png"
           alt="Home"
         />
       </a>
-
-      <a
-        href="/build/index.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+      <li
+        class="mx-4 aspect-video min-w-[40vw] flex-1 text-white md:mx-6 md:min-w-[5vw]"
       >
-        />
-      </a>
+        <ul class="flex-1">
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="https://www.instagram.com/akkibi_/"
+            >
+              <img
+                src="/public/icon-instagram.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="instagram icon"
+              />
+              Instagram
+            </a>
+          </li>
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="https://www.youtube.com/channel/UCrD4zsPRlACIAoclbBWIEmg"
+            >
+              <img
+                src="/public/icon-youtube.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="youtube icon"
+              />
+              YouTube
+            </a>
+          </li>
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="mailto:akiravalade@gmail.com"
+            >
+              <img
+                src="/public/icon-mail.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="mail icon"
+              />
+              Mail
+            </a>
+          </li>
+        </ul>
+      </li>
     </ul>
-
     <!-- can move -->
 
     <div
@@ -122,7 +178,7 @@
       >
         <img
           class="relative max-h-[50%] max-w-[100%] flex-1 sm:max-h-[100%] sm:max-w-[50%]"
-          src="/build/public/Akiravalade.png"
+          src="/public/Akiravalade.png"
         />
         <div
           class="max-h-[50%] max-w-[100%] flex-1 shrink-0 sm:max-h-[100%] sm:max-w-[50%]"
@@ -131,41 +187,41 @@
             class="slide relative flex flex-row gap-[5vw] py-[0vh] px-[2.5vw] sm:flex-col sm:gap-[5vh] sm:py-[2.5vh] sm:px-[0vw]"
           >
             <img
-              src="/build/public/1.jpg"
+              src="/public/1.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/2.jpg"
+              src="/public/2.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/3.jpg"
+              src="/public/3.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/4.jpg"
+              src="/public/4.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             /><img
-              src="/build/public/1.jpg"
+              src="/public/1.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/2.jpg"
+              src="/public/2.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/3.jpg"
+              src="/public/3.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
-              src="/build/public/4.jpg"
+              src="/public/4.jpg"
               alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
@@ -178,47 +234,46 @@
       <main
         class="bg-trsp-black absolute inset-0 m-0 box-border flex h-screen w-screen flex-col items-center justify-center gap-[2vh] border-2 border-blue-1000 p-[5%] text-center text-white"
       >
-        <h1 class="text-[10vw] font-black sm:text-[7.5vw] lg:text-[5.5vw]">
-          Bienvenue dans <br />
-          mon univers artistique,
+        <h1 class="bld-whyte text-[10vw] sm:text-[7.5vw] lg:text-[5.5vw]">
+          Welcome to <br />
+          my artistic universe
         </h1>
         <div class="h-[2.5px] w-[50%] rounded bg-white opacity-50"></div>
         <h2
           class="text-[5vw] font-bold sm:w-[75%] sm:text-[3.5vw] lg:text-[2.5vw]"
         >
-          je suis Akira Valade, un passionné par la création 3D sur Blender et
-          la création de sites web sur Figma.
+          I'm Akira Valade, a fan of 3D creation on Blender and website creation
+          on Figma.
         </h2>
         <p
-          class="text-[3.5vw] font-medium sm:w-[75%] sm:text-[2.5vw] lg:text-[1.75vw]"
+          class="text-[3.5vw] font-normal sm:w-[75%] sm:text-[2.5vw] lg:text-[1.75vw]"
         >
-          Découvrez mes travaux et mon parcours en tant que designer et
-          développeur en herbe
+          Discover my work and my journey as a budding designer and developer
         </p>
       </main>
     </div>
-    <!-- can move -->
+    <!-- bouton menu -->
 
     <button
       id="nav-toggle"
       type="button"
       onclick="toggleNav()"
-      class="absolute left-1/2 bottom-10 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
+      class="absolute left-1/2 bottom-5 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
     >
       <img
         id="open"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-        src="/build/public/menu.svg"
+        src="/public/menu.svg"
         alt=""
       />
       <img
         id="close"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-        src="/build/public/close.svg"
+        src="/public/close.svg"
         alt=""
       />
     </button>
 
-    <script src="/build/script.js"></script>
+    <script src="/src/script.js"></script>
   </body>
 </html>

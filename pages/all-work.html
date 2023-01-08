@@ -45,88 +45,134 @@
       content="https://pbs.twimg.com/media/FhG4fKrX0AAGoc1?format=jpg&name=large"
     />
 
-    <link rel="shortcut icon" href="/build/public/favicon.ico" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="icon" href="favicon.ico?v=1.1" />
 
-    <link rel="stylesheet" href="/build/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body
     class="m-0 h-screen w-screen overflow-hidden bg-black text-white"
     data-nav="false"
   >
+    <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
+      <img
+        class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
+        src="/public/gradient.png"
+      />
+      <div class="absolute inset-0 m-0 h-full border-2 border-blue-1000"></div>
+    </div>
+    <!-- menu -->
     <ul
       id="menu"
-      class="absolute top-[75%] flex translate-y-[50%] scale-75 flex-row flex-wrap items-center justify-center py-4 duration-500"
+      class="absolute top-[75%] flex translate-y-[-50%] flex-row flex-wrap items-center justify-center px-4"
     >
       <a
-        href="/build/index.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/index.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[10vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
           HOME
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/home.png"
+          src="/public/home.png"
           alt="Home"
         />
       </a>
 
       <a
-        href="/build/pages/all-work.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/all-work.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[6vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:top-[0%] sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
-          ALL WORK
+          WORK
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/work.png"
+          src="/public/work.png"
           alt="Home"
         />
       </a>
 
       <a
-        href="/build/pages/About.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+        href="/pages/About.html"
+        class="mx-4 my-2 aspect-video min-w-[40vw] flex-1 md:mx-6 md:min-w-[5vw]"
       >
         <li
-          class="relative top-[50%] h-0 list-[none] text-center text-[10vw] font-bold text-white opacity-75 transition duration-150 hover:opacity-100 sm:text-[4.5vw]"
+          class="bld-whyte relative top-[50%] h-0 list-[none] text-center text-[10vw] text-white opacity-75 transition duration-150 hover:opacity-100 md:text-[4.5vw]"
         >
           ABOUT
         </li>
         <img
           class="mb-1 box-border w-full rounded-[8px] border-2 border-blue-1000"
-          src="/build/public/about.png"
+          src="/public/about.png"
           alt="Home"
         />
       </a>
-
-      <a
-        href="/build/index.html"
-        class="mx-3 aspect-video min-w-[40vw] flex-1 sm:min-w-[5vw] md:mx-6"
+      <li
+        class="mx-4 aspect-video min-w-[40vw] flex-1 text-white md:mx-6 md:min-w-[5vw]"
       >
-        />
-      </a>
+        <ul class="flex-1">
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="https://www.instagram.com/akkibi_/"
+            >
+              <img
+                src="/public/icon-instagram.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="instagram icon"
+              />
+              Instagram
+            </a>
+          </li>
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="https://www.youtube.com/channel/UCrD4zsPRlACIAoclbBWIEmg"
+            >
+              <img
+                src="/public/icon-youtube.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="youtube icon"
+              />
+              YouTube
+            </a>
+          </li>
+          <li class="justify-content-center flex items-center">
+            <a
+              class="text-8vw h-6vw my-2 drop-shadow-[0_0_10px_rgba(0,0,0,1)] md:h-[4.5vw]"
+              href="mailto:akiravalade@gmail.com"
+            >
+              <img
+                src="/public/icon-mail.svg"
+                class="mx-[0.5vw] inline aspect-square h-full"
+                alt="mail icon"
+              />
+              Mail
+            </a>
+          </li>
+        </ul>
+      </li>
     </ul>
-
     <!-- can move -->
     <div
       id="moveUp"
       class="absolute m-0 h-full w-full overflow-y-scroll border-2 border-blue-1000 duration-500 ease-out"
     >
-      <section class="body-font bg-black text-gray-600">
+      <img src="/public/" alt="" />
+      <section class="body-font bg-black text-gray-400">
         <div class="container mx-auto px-[5%] py-24">
           <div class="mb-20 flex w-full flex-wrap">
             <div class="mb-6 w-full lg:mb-0 lg:w-1/2">
               <h1
-                class="title-font mb-2 text-2xl font-medium text-blue-1000 sm:text-6xl"
+                class="title-font mb-2 text-2xl font-medium text-white sm:text-6xl"
               >
-                Projects - 3D
+                3D PROJECTS
               </h1>
               <div class="h-1 w-20 rounded to-blue-1000"></div>
             </div>
@@ -141,10 +187,12 @@
           <div class="-m-4 flex flex-wrap">
             <!-- un projet type-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -165,10 +213,12 @@
             </div>
             <!-- un projet type 2-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -189,10 +239,12 @@
             </div>
             <!-- un projet type 3-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -213,10 +265,12 @@
             </div>
             <!-- un projet type 4-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -237,10 +291,12 @@
             </div>
             <!-- un projet type 5-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -268,7 +324,7 @@
           <div class="mb-20 flex w-full flex-wrap">
             <div class="mb-6 w-full lg:mb-0 lg:w-1/2">
               <h1
-                class="title-font mb-2 text-2xl font-medium text-blue-1000 sm:text-6xl"
+                class="title-font mb-2 text-2xl font-medium text-white sm:text-6xl"
               >
                 2D DESIGN
               </h1>
@@ -285,10 +341,12 @@
           <div class="-m-4 flex flex-wrap">
             <!-- un projet type-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -309,10 +367,12 @@
             </div>
             <!-- un projet type 2-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -333,10 +393,12 @@
             </div>
             <!-- un projet type 3-->
             <div class="p-4 md:w-1/2 xl:w-1/4">
-              <div class="rounded-lg border-2 border-blue-1000 bg-black p-6">
+              <div
+                class="rounded-lg border-2 border-blue-1000 bg-[#00051F] p-6"
+              >
                 <img
                   class="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="/build/public/1.jpg"
+                  src="/public/1.jpg"
                   alt="content"
                 />
                 <h3
@@ -367,22 +429,22 @@
       id="nav-toggle"
       type="button"
       onclick="toggleNav()"
-      class="fixed left-1/2 bottom-10 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
+      class="fixed left-1/2 bottom-5 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
     >
       <img
         id="open"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-        src="/build/public/menu.svg"
+        src="/public/menu.svg"
         alt=""
       />
       <img
         id="close"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-        src="/build/public/close.svg"
+        src="/public/close.svg"
         alt=""
       />
     </button>
 
-    <script src="/build/script.js"></script>
+    <script src="/src/script.js"></script>
   </body>
 </html>

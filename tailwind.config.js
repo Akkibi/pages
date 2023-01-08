@@ -3,7 +3,7 @@ module.exports = {
   mode: "jit",
   // purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, //or 'media' or 'class'
-  content: ["./build/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       // keyframes: {
