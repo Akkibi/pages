@@ -2,106 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@font-face{
-    font-family: "whytebld";
-    src: url(/fonts/WhyteInktrap-Black.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  font-family: "whytebld";
+  src: url(/fonts/WhyteInktrap-Black.ttf);
 }
 
-@font-face{
-    font-family: "whyte";
-    src: url(/fonts/WhyteInktrap-Regular.ttf);
+@font-face {
+  font-family: "whyte";
+  src: url(/fonts/WhyteInktrap-Regular.ttf);
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.grid-gradient{
-    background-size: 40px 40px;
-    background-image:
-    linear-gradient(to right, white 2px, transparent 2px),
-    linear-gradient(to bottom,white 2px, transparent 2px);
+.grid-gradient {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, white 2px, transparent 2px),
+    linear-gradient(to bottom, white 2px, transparent 2px);
 }
 
-
-
-
-.reg-whyte{
-    font-family: "whyte";
+.reg-whyte {
+  font-family: "whyte";
 }
-.bld-whyte{
-    font-family: "whytebld";
+.bld-whyte {
+  font-family: "whytebld";
 }
-
 
 @layer base {
-    html {
-      font-family: 'Montserrat', sans-serif;
-    }
+  html {
+    font-family: "Montserrat", sans-serif;
   }
+}
 
-
-::-webkit-scrollbar{
-    width: 1em;
-    height: 1em;
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
 }
 ::-webkit-scrollbar-track {
-    background-color: black;
-    }
+  background-color: black;
+}
 ::-webkit-scrollbar-thumb {
-    border: 2px solid black ;
-    border-radius: 100vw;
-    background-color: #001382;
+  border: 2px solid black;
+  border-radius: 100vw;
+  background-color: #001382;
 }
 ::-webkit-scrollbar-thumb:hover {
-    border: 2px solid black ;
-    background-color: white;
+  border: 2px solid black;
+  background-color: white;
 }
 
-
-body[data-nav="true"] > #moveUp{
-    transform: translateY(-50%);
+body[data-nav="true"] > #moveUp {
+  transform: translateY(-50%);
 }
-body[data-nav="true"] > #menu{
-    transform: translateY(-50%) scale(1);
+body[data-nav="true"] > #menu {
+  transform: translateY(-50%) scale(1);
 }
-
 
 body:not([data-nav="true"]) > #nav-toggle:hover > #open {
-    opacity: 1 !important;
-    transform: translate(-50%,-50%) scale(2);
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(2);
 }
 
 body[data-nav="true"] > #nav-toggle > #close {
-    opacity: 1 !important;
-    transform: translate(-50%,-50%) scale(2);
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(2);
 }
 
-
-
-@media (max-width:640px) {
-    .slide{
-        animation-name: movx;
-    }    
+@media (max-width: 640px) {
+  .slide {
+    animation-name: movx;
+  }
 }
-@media (min-width:640px) {
-    .slide{
-        animation-name: movy;
-    }
+@media (min-width: 640px) {
+  .slide {
+    animation-name: movy;
+  }
 }
-.slide{
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.slide {
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-  @keyframes movy {
-    from { transform: translateY(0%) ;}
-    to { transform: translateY(-50%) ;}
+@keyframes movy {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
 }
 
 @keyframes movx {
-    from { transform: translateX(0%) ;}
-    to { transform: translateX(-400%) ;}
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-400%);
+  }
 }
