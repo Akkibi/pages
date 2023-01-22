@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+.good-shadow {
+  text-shadow: #000000 0 0 50px;
+}
+
 .grid-gradient {
   background-size: 40px 40px;
   background-image: linear-gradient(to right, white 2px, transparent 2px),

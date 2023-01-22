@@ -60,6 +60,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="m-0 h-screen w-screen overflow-hidden bg-black" data-nav="false">
     <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
@@ -225,26 +227,35 @@
       <div
         class="absolute inset-0 m-0 h-screen w-screen bg-black opacity-50"
       ></div>
-      <main
+      <div
         class="bg-trsp-black absolute inset-0 m-0 box-border flex h-screen w-screen flex-col items-center justify-center gap-[2vh] border-2 border-blue-1000 p-[5%] text-center text-white"
       >
-        <h1 class="bld-whyte text-[10vw] sm:text-[7.5vw] lg:text-[5.5vw]">
+        <h1
+          data-aos="zoom-in"
+          class="good-shadow bld-whyte text-[10vw] sm:text-[7.5vw] lg:text-[5.5vw]"
+        >
           Welcome to <br />
           my artistic universe
         </h1>
         <div class="h-[2.5px] w-[50%] rounded bg-white opacity-50"></div>
         <h2
-          class="text-[5vw] font-bold sm:w-[75%] sm:text-[3.5vw] lg:text-[2.5vw]"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-delay="250"
+          class="good-shadow text-[5vw] font-bold text-slate-200 sm:w-[75%] sm:text-[3.5vw] lg:text-[2.5vw]"
         >
           I'm Akira Valade, a fan of 3D creation on Blender and website creation
           on Figma.
         </h2>
         <p
-          class="text-[3.5vw] font-normal sm:w-[75%] sm:text-[2.5vw] lg:text-[1.75vw]"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-delay="500"
+          class="good-shadow text-[3.5vw] font-normal text-slate-400 sm:w-[75%] sm:text-[2.5vw] lg:text-[1.75vw]"
         >
           Discover my work and my journey as a budding designer and developer
         </p>
-      </main>
+      </div>
     </div>
     <!-- bouton menu -->
 
