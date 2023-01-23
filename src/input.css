@@ -65,7 +65,7 @@ body[data-nav="true"] > #menu {
   transform: translateY(-50%) scale(1);
 }
 
-body:not([data-nav="true"]) > #nav-toggle:hover > #open {
+body:not([data-nav="true"]) > #nav-toggle > #open {
   opacity: 1 !important;
   transform: translate(-50%, -50%) scale(2);
 }
