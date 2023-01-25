@@ -41,6 +41,13 @@
   }
 }
 
+@media screen and (min-width: 640px) {
+  .svg-background {
+    background: url(/public/background.svg) repeat;
+    background-size: 100vh;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 1em;
   height: 1em;
@@ -62,6 +69,7 @@ body[data-nav="true"] > #moveUp {
   transform: translateY(-50%);
 }
 body[data-nav="true"] > #menu {
+  opacity: 1;
   transform: translateY(-50%) scale(1);
 }
 
