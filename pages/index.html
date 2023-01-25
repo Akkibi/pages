@@ -69,7 +69,9 @@
         class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
         src="../public/gradient.png"
       />
-      <div class="absolute inset-0 m-0 h-full border-2 border-blue-1000"></div>
+      <div
+        class="absolute inset-0 m-0 h-full w-full border-2 border-blue-1000"
+      ></div>
     </div>
     <!-- menu -->
     <ul
@@ -167,10 +169,10 @@
 
     <div
       id="moveUp"
-      class="absolute overflow-hidden bg-black duration-500 ease-out"
+      class="absolute h-full w-full overflow-hidden bg-black duration-500 ease-out"
     >
       <div
-        class="inset-0 m-0 flex h-screen w-screen flex-col items-stretch gap-[5%] p-[5%] sm:flex-row"
+        class="absolute inset-0 m-0 flex h-full w-full flex-col items-stretch gap-[5%] p-[5%] sm:flex-row"
       >
         <img
           data-aos="fade-right"
@@ -192,41 +194,33 @@
           >
             <img
               src="../public/1.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/2.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/3.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/4.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             /><img
               src="../public/1.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/2.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/3.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
             <img
               src="../public/4.jpg"
-              alt=""
               class="box-border aspect-square h-auto w-auto rounded-[7.5%] border-2 border-blue-1000 object-cover"
             />
           </div>
@@ -490,19 +484,17 @@
       id="nav-toggle"
       type="button"
       onclick="toggleNav()"
-      class="absolute left-1/2 bottom-1 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
+      class="absolute left-1/2 bottom-1 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent sm:hover:scale-110 sm:hover:bg-transparent"
     >
       <img
         id="open"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/menu.svg"
-        alt=""
       />
       <img
         id="close"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/close.svg"
-        alt=""
       />
     </button>
 
