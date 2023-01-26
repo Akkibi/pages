@@ -87,6 +87,13 @@ body[data-nav="true"] > #nav-toggle > #close {
   .slide {
     animation-name: movx;
   }
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 @media (min-width: 640px) {
   .slide {
