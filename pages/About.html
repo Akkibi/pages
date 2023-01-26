@@ -159,7 +159,7 @@
 
     <div
       id="moveUp"
-      class="font-roboto border-indigo relative box-border flex max-h-full w-full flex-col items-center justify-center overflow-hidden border-2 border-solid border-blue-1000 bg-black p-[5%] text-center text-xl text-white duration-500 ease-out sm:p-[2.5vw]"
+      class="font-roboto border-indigo absolute inset-0 box-border flex h-full w-full flex-col items-center justify-center overflow-hidden border-2 border-solid border-blue-1000 bg-black p-[5%] text-center text-xl text-white duration-500 ease-out sm:p-[2.5vw]"
     >
       <div class="flex flex-row items-start justify-between self-stretch">
         <img
@@ -240,8 +240,6 @@
             class="flex flex-row items-start justify-between self-stretch text-center"
           >
             <a
-              data-aos="zoom-in-down"
-              data-aos-delay="550"
               class="flex flex-row items-center justify-center gap-[2vw] text-[inherit] [text-decoration:none]"
               href="https://www.instagram.com/akkibi_/"
               target="_blank"
@@ -252,8 +250,6 @@
               />
               <div class="relative leading-[50px]">Instagram</div></a
             ><a
-              data-aos="zoom-in-down"
-              data-aos-delay="600"
               class="flex flex-row items-center justify-center gap-[2vw] text-[inherit] [text-decoration:none]"
               href="https://www.youtube.com/channel/UCrD4zsPRlACIAoclbBWIEmg"
               ><img
@@ -263,8 +259,6 @@
               />
               <div class="relative leading-[50px]">Youtube</div></a
             ><a
-              data-aos="zoom-in-down"
-              data-aos-delay="650"
               class="flex flex-row items-center justify-center gap-[2vw] text-[inherit] [text-decoration:none]"
               href="mailto:akiravalade@gmail.com?subject=Hello, I just saw your portfolio, "
               ><img
@@ -296,19 +290,17 @@
       id="nav-toggle"
       type="button"
       onclick="toggleNav()"
-      class="fixed left-1/2 bottom-1 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out hover:scale-110 hover:bg-transparent active:scale-90"
+      class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-1000 bg-blue-1000 font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent sm:hover:scale-110 sm:hover:bg-transparent"
     >
       <img
         id="open"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/menu.svg"
-        alt=""
       />
       <img
         id="close"
         class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/close.svg"
-        alt=""
       />
     </button>
 
