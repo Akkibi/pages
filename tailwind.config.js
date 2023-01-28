@@ -21,7 +21,8 @@ module.exports = {
       // },
       colors: {
         blue: {
-          1000: "#001382",
+          first: "#001382",
+          secondary: "#00051F",
         },
       },
     },
