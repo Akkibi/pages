@@ -165,7 +165,7 @@
       </h1>
       <div
         id="category1"
-        class="duration-first absolute top-1/2 left-1/2 h-[63vh] w-[43vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first ease-in-out"
+        class="absolute top-1/2 left-1/2 h-[63vh] w-[43vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first duration-500 ease-in-out"
         style="
           background: url(/public/1-1.jpg) no-repeat center;
           background-size: 100vh;
@@ -176,7 +176,7 @@
         ></div>
         <div
           id="category2"
-          class="duration-first absolute top-1/2 left-1/2 h-[62vh] w-[42vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first ease-in-out"
+          class="absolute top-1/2 left-1/2 h-[62vh] w-[42vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first duration-500 ease-in-out"
           style="
             background: url(/public/2.jpg) no-repeat center;
             background-size: 100vh;
@@ -187,7 +187,7 @@
           ></div>
           <div
             id="category3"
-            class="duration-first absolute top-1/2 left-1/2 h-[61vh] w-[41vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first ease-in-out"
+            class="absolute top-1/2 left-1/2 h-[61vh] w-[41vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first duration-500 ease-in-out"
             style="
               background: url(/public/3.jpg) no-repeat center;
               background-size: 100vh;
@@ -214,16 +214,9 @@
         onclick="slideLeft()"
         class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[-175%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-first bg-blue-first font-bold text-white duration-500 ease-out active:scale-90 active:bg-transparent sm:hover:scale-110 sm:hover:bg-transparent"
       >
-        left
         <img
-          id="open"
-          class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-          src="../public/menu.svg"
-        />
-        <img
-          id="close"
-          class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-          src="../public/close.svg"
+          class="opacity-1 pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 duration-200"
+          src="../public/left.svg"
         />
       </button>
       <button
@@ -232,16 +225,9 @@
         onclick="slideRight()"
         class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[75%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-first bg-blue-first font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent sm:hover:scale-110 sm:hover:bg-transparent"
       >
-        right
         <img
-          id="open"
-          class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-          src="../public/menu.svg"
-        />
-        <img
-          id="close"
-          class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
-          src="../public/close.svg"
+          class="opacity-1 pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 duration-200"
+          src="../public/right.svg"
         />
       </button>
     </div>
@@ -255,12 +241,12 @@
     >
       <img
         id="open"
-        class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
+        class="pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/menu.svg"
       />
       <img
         id="close"
-        class="pointer-events-none absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
+        class="pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 opacity-0 duration-200"
         src="../public/close.svg"
       />
     </button>

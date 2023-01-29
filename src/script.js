@@ -10,39 +10,30 @@ function changeDivCSS() {
   console.log(categorie);
   if (categorie > 0) {
     var div = document.getElementById("category1");
-    div.style.width = "400vw";
+    div.style.width = "400vh";
     div.style.height = "600vh";
     if (categorie > 1) {
       var div = document.getElementById("category2");
-      div.style.width = "400vw";
+      div.style.width = "400vh";
       div.style.height = "600vh";
       if (categorie > 2) {
         var div = document.getElementById("category3");
-        div.style.width = "400vw";
+        div.style.width = "400vh";
         div.style.height = "600vh";
-        if (categorie > 3) {
-          var div = document.getElementById("category3");
-          div.style.width = "400vw";
-          div.style.height = "600vh";
-        } else {
-          var div = document.getElementById("category3");
-          div.style.width = "40vw";
-          div.style.height = "60vh";
-        }
       } else {
         var div = document.getElementById("category3");
-        div.style.width = "40vw";
-        div.style.height = "60vh";
+        div.style.width = "41vh";
+        div.style.height = "61vh";
       }
     } else {
       var div = document.getElementById("category2");
-      div.style.width = "40vw";
-      div.style.height = "60vh";
+      div.style.width = "42vh";
+      div.style.height = "62vh";
     }
   } else {
     var div = document.getElementById("category1");
-    div.style.width = "40vw";
-    div.style.height = "60vh";
+    div.style.width = "43vh";
+    div.style.height = "63vh";
   }
 }
 
