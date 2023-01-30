@@ -10,16 +10,16 @@ function changeDivCSS() {
   console.log(categorie);
   if (categorie > 0) {
     var div = document.getElementById("category1");
-    div.style.width = "400vh";
-    div.style.height = "600vh";
+    div.style.width = "200vw";
+    div.style.height = "400vh";
     if (categorie > 1) {
       var div = document.getElementById("category2");
-      div.style.width = "400vh";
-      div.style.height = "600vh";
+      div.style.width = "200vw";
+      div.style.height = "400vh";
       if (categorie > 2) {
         var div = document.getElementById("category3");
-        div.style.width = "400vh";
-        div.style.height = "600vh";
+        div.style.width = "200vw";
+        div.style.height = "400vh";
       } else {
         var div = document.getElementById("category3");
         div.style.width = null;

@@ -18,6 +18,20 @@
   box-sizing: border-box;
 }
 
+/* images carousel */
+#categoryImage1 {
+  background: url(../public/doublekingportfolio.png) repeat center;
+  background-size: cover;
+}
+#categoryImage2 {
+  background: url(../public/2.jpg) repeat center;
+  background-size: cover;
+}
+#categoryImage3 {
+  background: url(../public/3.jpg) repeat center;
+  background-size: cover;
+}
+
 .good-shadow {
   text-shadow: #000000 0 0 50px;
 }
@@ -101,6 +115,10 @@ body[data-nav="true"] > #nav-toggle > #close {
   select,
   a {
     -webkit-tap-highlight-color: transparent;
+  }
+  #categoryImage1 {
+    background: url(../public/doublekingportfoliophone.png) repeat center;
+    background-size: cover;
   }
 }
 @media (min-width: 640px) {
