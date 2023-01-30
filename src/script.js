@@ -12,6 +12,8 @@ function changeDivCSS() {
     var div = document.getElementById("category1");
     div.style.width = "200vw";
     div.style.height = "400vh";
+    document.getElementById("butonOpen").style.transform +=
+      "translate(-50% , -350%)";
     if (categorie > 1) {
       var div = document.getElementById("category2");
       div.style.width = "200vw";
@@ -34,6 +36,7 @@ function changeDivCSS() {
     var div = document.getElementById("category1");
     div.style.width = null;
     div.style.height = null;
+    document.getElementById("butonOpen").style.transform = null;
   }
 }
 
@@ -57,6 +60,8 @@ function slideRight() {
     }
   }
 }
-
-document.getElementById("1Card1").style.backgroundImage =
-  "url('../public/1.jpg')";
+function openSlideRight() {
+  if (categorie < 1) {
+    slideRight();
+  }
+}
