@@ -12,8 +12,10 @@ function changeDivCSS() {
     var div = document.getElementById("category1");
     div.style.width = "200vw";
     div.style.height = "400vh";
-    document.getElementById("butonOpen").style.transform +=
+    document.getElementById("butonOpen").style.transform =
       "translate(-50% , -350%)";
+    document.getElementById("butonDiscover").style.transform =
+      "translate(-50% , -50%)";
     if (categorie > 1) {
       var div = document.getElementById("category2");
       div.style.width = "200vw";
@@ -37,6 +39,7 @@ function changeDivCSS() {
     div.style.width = null;
     div.style.height = null;
     document.getElementById("butonOpen").style.transform = null;
+    document.getElementById("butonDiscover").style.transform = null;
   }
 }
 
