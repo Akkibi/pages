@@ -57,7 +57,7 @@
 
 /* @media screen and (min-width: 640px) { */
 .svg-background {
-  background: url(/public/background.svg) repeat;
+  background: url(../public/background.svg) repeat;
   background-size: 150vh;
 }
 /* } */
