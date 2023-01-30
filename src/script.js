@@ -57,3 +57,6 @@ function slideRight() {
     }
   }
 }
+
+document.getElementById("1Card1").style.backgroundImage =
+  "url('../public/1.jpg')";
