@@ -22,18 +22,18 @@ function changeDivCSS() {
         div.style.height = "600vh";
       } else {
         var div = document.getElementById("category3");
-        div.style.width = "41vh";
-        div.style.height = "61vh";
+        div.style.width = null;
+        div.style.height = null;
       }
     } else {
       var div = document.getElementById("category2");
-      div.style.width = "42vh";
-      div.style.height = "62vh";
+      div.style.width = null;
+      div.style.height = null;
     }
   } else {
     var div = document.getElementById("category1");
-    div.style.width = "43vh";
-    div.style.height = "63vh";
+    div.style.width = null;
+    div.style.height = null;
   }
 }
 
@@ -42,16 +42,18 @@ function slideLeft() {
     categorie--;
     changeDivCSS();
     document.getElementById("nav-right").style.opacity = 1;
-  } else {
-    document.getElementById("nav-left").style.opacity = 0;
+    if (categorie <= 0) {
+      document.getElementById("nav-left").style.opacity = 0;
+    }
   }
 }
 function slideRight() {
-  if (categorie < 4) {
+  if (categorie < 3) {
     categorie++;
     changeDivCSS();
     document.getElementById("nav-left").style.opacity = 1;
-  } else {
-    document.getElementById("nav-right").style.opacity = 0;
+    if (categorie >= 3) {
+      document.getElementById("nav-right").style.opacity = 0;
+    }
   }
 }
