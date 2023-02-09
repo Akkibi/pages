@@ -54,6 +54,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="m-0 h-screen w-screen overflow-hidden bg-black" data-nav="false">
+    <!-- fond -->
     <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
       <img
         class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
@@ -159,7 +160,7 @@
       class="svg-background absolute m-0 h-full w-full overflow-hidden border-2 border-blue-first bg-none duration-500 ease-in-out"
     >
       <button
-        class="bld-whyte good-shadow absolute top-[2vh] w-full text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
+        class="bld-whyte good-shadow absolute top-[15%] w-full -translate-y-1/2 text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
       >
         <h1>Explore my projects</h1>
       </button>
@@ -172,7 +173,7 @@
           class="absolute top-1/2 left-1/2 h-screen w-screen -translate-x-1/2 -translate-y-1/2"
         >
           <h1
-            class="bld-whyte good-shadow absolute top-[2vh] w-full text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
+            class="bld-whyte good-shadow absolute top-[15%] w-full -translate-y-1/2 text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
           >
             Projets 3D
           </h1>
@@ -186,7 +187,7 @@
             class="absolute top-1/2 left-1/2 h-screen w-screen -translate-x-1/2 -translate-y-1/2"
           >
             <h1
-              class="bld-whyte good-shadow absolute top-[2vh] w-full text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
+              class="bld-whyte good-shadow absolute top-[15%] w-full -translate-y-1/2 text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
             >
               Projets UI design
             </h1>
@@ -200,7 +201,7 @@
               class="absolute top-1/2 left-1/2 h-screen w-screen -translate-x-1/2 -translate-y-1/2"
             >
               <h1
-                class="bld-whyte good-shadow absolute top-[2vh] w-full text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
+                class="bld-whyte good-shadow absolute top-0 w-full translate-y-1/2 text-center text-[15vw] text-white sm:text-[8vw] lg:text-[5.5vw]"
               >
                 Projets dev web
               </h1>
@@ -215,7 +216,7 @@
           id="butonOpen"
           type="button"
           onclick="openSlideRight()"
-          class="absolute top-1/2 left-1/2 inline-block -translate-y-1/2 -translate-x-1/2 text-center text-[5vh] text-white duration-500 ease-in-out sm:text-[7.5vh] md:text-[10vh]"
+          class="absolute top-1/2 left-1/2 inline-block -translate-y-1/2 -translate-x-1/2 select-none text-center text-[5vh] text-white duration-500 ease-in-out sm:text-[7.5vh] md:text-[10vh]"
         >
           <h2>OPEN</h2>
         </button>
@@ -223,13 +224,9 @@
           type="button"
           onclick="openCurrentCategory()"
           id="butonDiscover"
-          class="absolute top-1/2 left-1/2 translate-y-[250%] -translate-x-1/2 duration-500 ease-in-out"
+          class="absolute top-1/2 left-1/2 h-1/2 translate-y-[250%] -translate-x-1/2 select-none duration-500 ease-in-out"
         >
-          <div class="aspect-square h-1/2 rounded border-2 border-white">
-            <div
-              class="origin-center-left h-full w-full bg-white hover:rotate-90"
-            ></div>
-          </div>
+          <img class="aspect-square h-full" src="/public/door.svg" />
           <h3 class="text-[3vh] text-white sm:text-[5vh] md:text-[7.5vh]">
             Discover
           </h3>

@@ -1,0 +1,50 @@
+{
+  "3dProjects": [
+    {
+      "name": "firby",
+      "title": "3D Cursed worm Firby",
+      "description": "This is my first 3D character with hair, a cursed Firby. I created him with the intention of learning more about fair particules in blender.",
+      "images": [
+        "firby-close-128-lighten.jpg",
+        "firby-large.png",
+        "firby-wireframe.png"
+      ],
+      "videos": []
+    },
+    {
+      "name": "projet2",
+      "title": "blabla2",
+      "description": "Some text.",
+      "images": [
+        "v2-firby-close-128-lighten.jpg",
+        "v2-firby-large.png",
+        "v2-firby-wireframe.png"
+      ],
+      "videos": []
+    }
+  ],
+  "2dProjects": [
+    {
+      "name": "firby",
+      "title": "2D Cursed worm Firby",
+      "description": "This is my first 2D character with hair, a cursed Firby. I created him with the intention of learning more about fair particules in figma.",
+      "images": [
+        "2d-firby-close-128-lighten.jpg",
+        "2d-firby-large.png",
+        "2d-firby-wireframe.png"
+      ],
+      "videos": []
+    },
+    {
+      "name": "projet2",
+      "title": "blabla2",
+      "description": "Some text.",
+      "images": [
+        "2d-v2-firby-close-128-lighten.jpg",
+        "2d-v2-firby-large.png",
+        "2d-v2-firby-wireframe.png"
+      ],
+      "videos": []
+    }
+  ]
+}
