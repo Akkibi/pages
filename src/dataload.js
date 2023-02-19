@@ -17,23 +17,11 @@ fetch("../src/data.json")
     if (!projectData) {
       console.error("Project not found in data.json");
     }
-
-    // Get the first image of the project
-    // let textInsert = projectData.images[0];
-
-    // let nbText = 0;
-
-    // Change the background image of the elements with class ".textReplace"
-    // const textReplaceElements = document.querySelectorAll(".textReplace");
-    // textReplaceElements.forEach((unText) => {
-    //   contenusText = projectData.images[nbText];
-    //   unText.style.innerhtml = `url(../assets/firby/${contenusText})`;
-    //   nbTtext++;
-    // });
     console.log(document.querySelector(".backgroundReplace").style.background);
-    mainImage = document.querySelector(".backgroundReplace").style
-    mainImage.background = "url(../assets/firby/" + projectData.images[0] + ") center";
-    mainImage.background-size = "cover";
+    mainImage = document.querySelector(".backgroundReplace").style;
+    mainImage.background =
+      "url(../assets/firby/" + projectData.images[0] + ") center";
+    // mainImage.background-size = "cover";
 
     console.log(document.querySelector(".backgroundReplace").style.background);
     if (projectData.images.length > 1) {
