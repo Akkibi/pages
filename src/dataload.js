@@ -21,7 +21,7 @@ fetch("../src/data.json")
     mainImage = document.querySelector(".backgroundReplace").style;
     mainImage.background =
       "url(../assets/firby/" + projectData.images[0] + ") center";
-    // mainImage.background-size = "cover";
+    mainImage.backgroundSize = "cover";
 
     console.log(document.querySelector(".backgroundReplace").style.background);
     if (projectData.images.length > 1) {
@@ -30,7 +30,7 @@ fetch("../src/data.json")
         document.querySelector(".cardsInsert").innerHTML +=
           `
           <div
-          class="textReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
+          class="mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
           style="
             background: url(../assets/firby/` +
           projectData.images[i] +
@@ -40,4 +40,7 @@ fetch("../src/data.json")
         ></div>`;
       }
     }
+    document.querySelector(".cardsInsert").innerHTML += `<div
+    class="aspect-[2/3]"
+  ></div>`;
   });

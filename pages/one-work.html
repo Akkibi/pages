@@ -171,21 +171,23 @@
       class="absolute m-0 h-full w-full overflow-hidden border-2 border-blue-first bg-black duration-500 ease-in-out"
     >
       <div
-        class="m-0 flex h-full w-auto flex-nowrap gap-[5vw] overflow-y-hidden overflow-x-scroll bg-black p-[5vw]"
+        class="m-0 flex h-full w-auto flex-col flex-nowrap gap-[5vw] p-[5vw] sm:flex-row sm:overflow-x-scroll"
       >
-        <div
-          class="backgroundReplace aspect-[2/3] flex-initial rounded-3xl border-2 border-blue-first"
-          style="
+        <!-- style="
             background: url(../public/1.jpg) center;
             background-size: cover;
-          "
+          " -->
+        <div
+          class="backgroundReplace h-1/2 flex-initial rounded-3xl border-2 border-blue-first sm:aspect-[2/3] sm:h-full"
         ></div>
-        <div class="flex flex-shrink-0 flex-col flex-nowrap">
+        <div
+          class="flex h-1/2 flex-shrink-0 flex-col flex-nowrap overflow-x-scroll sm:h-full sm:overflow-hidden"
+        >
           <div class="h-auto w-auto pb-5">
-            <h1 class="textReplace bld-whyte text-5xl text-white">
+            <h1 class="textReplace bld-whyte text-[5vw] text-white sm:text-5xl">
               Windows 11 type wallpaper
             </h1>
-            <p class="textReplace text-white">
+            <p class="textReplace text-[2vw] text-white sm:text-sm">
               #windows11 #windows #graphic #3dart #render #scifi #artwork
               #visualart #surreal #scifiart #c4d #blender #nft #cgi <br />
               #visualartist #blender3d #abstract #fanart #motiongraphics
@@ -193,35 +195,9 @@
               #renderzone #microsoft #wallpaper
             </p>
           </div>
-          <div class="cardsInsert row mr-[2.5vw] flex flex-1 flex-shrink-0">
-            <!-- <div
-              class="backgroundReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
-              style="
-                background: url(../public/2.jpg) center;
-                background-size: cover;
-              "
-            ></div>
-            <div
-              class="backgroundReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
-              style="
-                background: url(../public/3.jpg) center;
-                background-size: cover;
-              "
-            ></div>
-            <div
-              class="backgroundReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
-              style="
-                background: url(../public/4.jpg) center;
-                background-size: cover;
-              "
-            ></div>
-            <div
-              class="backgroundReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
-              style="
-                background: url(../public/1.jpg) center;
-                background-size: cover;
-              "
-            ></div>
+          <div
+            class="cardsInsert row mr-[2.5vw] flex h-full flex-1 flex-shrink-0"
+          >
             <div
               class="backgroundReplace mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
               style="
@@ -235,7 +211,7 @@
                 background: url(../public/3.jpg) center;
                 background-size: cover;
               "
-            ></div> -->
+            ></div>
           </div>
         </div>
       </div>
