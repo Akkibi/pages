@@ -6,8 +6,8 @@
       "description": "This is my first 3D character with hair, a cursed Firby. I created him with the intention of learning more about fair particules in blender.",
       "images": [
         "firby-close-128-lighten.jpg",
-        "firby-large.png",
-        "firby-wireframe.png"
+        "firby-large.jpg",
+        "firby-wireframe.jpg"
       ],
       "videos": []
     },
@@ -17,8 +17,8 @@
       "description": "Some text.",
       "images": [
         "v2-firby-close-128-lighten.jpg",
-        "v2-firby-large.png",
-        "v2-firby-wireframe.png"
+        "v2-firby-large.jpg",
+        "v2-firby-wireframe.jpg"
       ],
       "videos": []
     }
@@ -30,8 +30,8 @@
       "description": "This is my first 2D character with hair, a cursed Firby. I created him with the intention of learning more about fair particules in figma.",
       "images": [
         "2d-firby-close-128-lighten.jpg",
-        "2d-firby-large.png",
-        "2d-firby-wireframe.png"
+        "2d-firby-large.jpg",
+        "2d-firby-wireframe.jpg"
       ],
       "videos": []
     },
@@ -41,8 +41,8 @@
       "description": "Some text.",
       "images": [
         "2d-v2-firby-close-128-lighten.jpg",
-        "2d-v2-firby-large.png",
-        "2d-v2-firby-wireframe.png"
+        "2d-v2-firby-large.jpg",
+        "2d-v2-firby-wireframe.jpg"
       ],
       "videos": []
     }
