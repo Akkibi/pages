@@ -171,24 +171,29 @@
       class="absolute m-0 h-full w-full overflow-hidden border-2 border-blue-first bg-black duration-500 ease-in-out"
     >
       <div
-        class="m-0 flex h-full w-auto flex-col flex-nowrap gap-[5vw] p-[5vw] sm:flex-row sm:overflow-x-scroll"
+        id="scrollable"
+        class="m-0 flex h-full w-auto flex-col flex-nowrap gap-[5vw] p-[5vw] sm:flex-row sm:gap-[4vw] sm:overflow-x-scroll sm:p-[4vw] lg:gap-[2vw] lg:p-[2vw]"
       >
         <button
           onclick="openCurrentImage()"
           class="backgroundReplace h-1/2 w-full flex-initial rounded-3xl border-2 border-blue-first sm:aspect-[2/3] sm:h-full"
         ></button>
         <div
+          id="scrollablePhone"
           class="flex h-1/2 flex-shrink-0 flex-col flex-nowrap overflow-x-scroll sm:h-full sm:overflow-hidden"
         >
-          <div class="h-auto pb-5" style="width: max-content">
-            <h1 class="textReplace bld-whyte text-[5vw] text-white sm:text-5xl">
+          <div class="h-auto w-screen pb-5 sm:w-[75vw] md:w-[82.5] lg:w-[50vw]">
+            <h1
+              id="titleReplace"
+              class="bld-whyte text-[5vw] text-white sm:text-5xl"
+            >
               Windows 11 type wallpaper
             </h1>
-            <p class="textReplace text-[3vw] text-white sm:text-sm">
+            <p id="descriptionReplace" class="text-[2vw] text-white sm:text-sm">
               #windows11 #windows #graphic #3dart #render #scifi #artwork
-              #visualart #surreal #scifiart #c4d #blender #nft #cgi <br />
+              #visualart #surreal #scifiart #c4d #blender #nft #cgi
               #visualartist #blender3d #abstract #fanart #motiongraphics
-              #cryptoart #scifiworld #procreate #nintendo #3d #blenderart <br />
+              #cryptoart #scifiworld #procreate #nintendo #3d #blenderart
               #renderzone #microsoft #wallpaper
             </p>
           </div>

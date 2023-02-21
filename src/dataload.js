@@ -37,6 +37,11 @@ function updateContent() {
       console.log(
         document.querySelector(".backgroundReplace").style.background
       );
+
+      document.getElementById("titleReplace").innerText = projectData.title;
+      document.getElementById("descriptionReplace").innerText =
+        projectData.description;
+
       mainImage = document.querySelector(".backgroundReplace").style;
       mainImage.background =
         "url(../assets/" +
@@ -171,3 +176,30 @@ function imageLeft() {
     updateContent();
   }
 }
+
+// var scrollable = document.getElementById("scrollable");
+
+// scrollable.addEventListener("wheel", function (event) {
+//   if (event.deltaX !== 0) {
+//     event.preventDefault();
+//     scrollable.scrollLeft += event.deltaX;
+//   }
+// });
+
+const scrollable = document.getElementById("scrollable");
+
+scrollable.addEventListener("wheel", (event) => {
+  event.preventDefault();
+
+  const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+  scrollable.scrollLeft -= delta * 40;
+});
+
+const scrollablePhone = document.getElementById("scrollablePhone");
+
+scrollablePhone.addEventListener("wheel", (event) => {
+  event.preventDefault();
+
+  const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+  scrollablePhone.scrollLeft -= delta * 40;
+});
