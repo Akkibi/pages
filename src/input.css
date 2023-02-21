@@ -62,9 +62,11 @@
 }
 /* } */
 
+body[data-nav="true"] > #moveUp > #arrow-left,
 body[data-nav="true"] > #moveUp > #nav-left {
   transform: translate(-112.5%, -50%) !important;
 }
+body[data-nav="true"] > #moveUp > #arrow-right,
 body[data-nav="true"] > #moveUp > #nav-right {
   transform: translate(12.5%, -50%) !important;
   /* scale: 2; */

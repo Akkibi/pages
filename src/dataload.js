@@ -141,7 +141,8 @@ function imageRight() {
       }
       // add 1 to the id
       let newId = parseInt(id);
-      if (id + 1 <= projectData.length) {
+      console.log(projectData.length);
+      if (parseInt(id) + 1 <= projectData.length) {
         newId = parseInt(id) + 1;
 
         // set the new id to the URL
