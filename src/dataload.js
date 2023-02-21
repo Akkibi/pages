@@ -193,7 +193,7 @@ scrollable.addEventListener("wheel", (event) => {
   event.preventDefault();
 
   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollable.scrollLeft -= delta * 40;
+  scrollable.scrollLeft += delta * 40;
 });
 
 const scrollablePhone = document.getElementById("scrollablePhone");
@@ -202,5 +202,5 @@ scrollablePhone.addEventListener("wheel", (event) => {
   event.preventDefault();
 
   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollablePhone.scrollLeft -= delta * 40;
+  scrollablePhone.scrollLeft += delta * 30;
 });
