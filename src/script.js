@@ -102,7 +102,7 @@ function openCurrentCategory() {
       }
       url = "?category=" + projectData + "&id=" + lastId;
       // window.open(url);
-      window.location.href = "/pages/one-work.html" + url;
+      window.location.href = "../pages/one-work.html" + url;
     });
 }
 // pages/one-work.html?category=3dProjects&id=0
