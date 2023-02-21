@@ -8,49 +8,79 @@ if (!category || isNaN(id)) {
   console.error("Invalid category or id in the URL");
 }
 
-// Load the data.json file
-fetch("../src/data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    // Get the project data from data.json based on the category and id
-    const projectData = data[category][id];
-    if (!projectData) {
-      console.error("Project not found in data.json");
+//set transparency on arrows
+function updateOpacity(x) {
+  if (id <= 0) {
+    document.getElementById("arrow-left").style.opacity = 0;
+  } else {
+    document.getElementById("arrow-left").style.opacity = 1;
+  }
+  if (x) {
+    if (id >= x - 1) {
+      document.getElementById("arrow-right").style.opacity = 0;
+    } else {
+      document.getElementById("arrow-right").style.opacity = 1;
     }
-    console.log(document.querySelector(".backgroundReplace").style.background);
-    mainImage = document.querySelector(".backgroundReplace").style;
-    mainImage.background =
-      "url(../assets/" +
-      projectData.name +
-      "/" +
-      projectData.images[0] +
-      ") center";
-    mainImage.backgroundSize = "cover";
+  }
+}
 
-    console.log(document.querySelector(".backgroundReplace").style.background);
-    if (projectData.images.length > 1) {
-      for (i = 1; i < projectData.images.length; i++) {
-        console.log(i);
-        console.log(projectData.name, projectData.images[i]);
-        document.querySelector(".cardsInsert").innerHTML +=
-          `
+// Load the data.json file
+function updateContent() {
+  fetch("../src/data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      // Get the project data from data.json based on the category and id
+      const projectData = data[category][id];
+      if (!projectData) {
+        console.error("Project not found in data.json");
+      }
+      console.log(
+        document.querySelector(".backgroundReplace").style.background
+      );
+      mainImage = document.querySelector(".backgroundReplace").style;
+      mainImage.background =
+        "url(../assets/" +
+        projectData.name +
+        "/" +
+        projectData.images[0] +
+        ") center";
+      mainImage.backgroundSize = "cover";
+
+      console.log(
+        document.querySelector(".backgroundReplace").style.background
+      );
+      if (projectData.images.length > 1) {
+        for (i = 1; i < projectData.images.length; i++) {
+          console.log(i);
+          console.log(projectData.name, projectData.images[i]);
+          document.querySelector(".cardsInsert").innerHTML +=
+            `
           <button
           onclick="openCurrentImage('` +
-          projectData.images[i] +
-          `')"
+            projectData.images[i] +
+            `')"
           class="mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
           style="
             background: url(../assets/` +
-          projectData.name +
-          `/` +
-          projectData.images[i] +
-          `) center;
+            projectData.name +
+            `/` +
+            projectData.images[i] +
+            `) center;
             background-size: cover;
           "
         ></button>`;
+        }
       }
-    }
-  });
+      //update opacity on load
+      if (id + 1 <= data[category].length) {
+        updateOpacity(data[category].length);
+      } else {
+        updateOpacity();
+      }
+    });
+}
+
+updateContent();
 
 function openCurrentImage(nomImage) {
   fetch("../src/data.json")
@@ -85,4 +115,59 @@ function openCurrentImage(nomImage) {
 function closeBig() {
   console.log("close image");
   document.getElementById("see-big-section").style.display = null;
+}
+
+//when right arrow is clicked
+function imageRight() {
+  // get the current URL
+  const url = new URL(window.location.href);
+
+  // get the id parameter from the query string
+  const id = url.searchParams.get("id");
+
+  //verify that the page exists
+  fetch("../src/data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      // Get the project data from data.json based on the category and id
+      const projectData = data[category];
+      if (!projectData) {
+        console.error("Project not found in data.json");
+      }
+      // add 1 to the id
+      let newId = parseInt(id);
+      if (id + 1 <= projectData.length) {
+        newId = parseInt(id) + 1;
+
+        // set the new id to the URL
+        url.searchParams.set("id", newId);
+
+        // update the URL
+        window.history.replaceState(null, null, url);
+        location.reload();
+        updateOpacity();
+        updateContent();
+      }
+    });
+}
+
+//when left arrow is clicked
+function imageLeft() {
+  const url = new URL(window.location.href);
+
+  // get the id parameter from the query string
+  const id = url.searchParams.get("id");
+  if (id > 0) {
+    // substract 1 to the id
+    const newId = parseInt(id) - 1;
+
+    // set the new id to the URL
+    url.searchParams.set("id", newId);
+
+    // update the URL
+    window.history.replaceState(null, null, url);
+    location.reload();
+    updateOpacity();
+    updateContent();
+  }
 }

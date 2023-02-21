@@ -12,13 +12,13 @@
       "videos": []
     },
     {
-      "name": "projet2",
+      "name": "firby",
       "title": "blabla2",
       "description": "Some text.",
       "images": [
-        "v2-firby-close-128-lighten.jpg",
-        "v2-firby-large.jpg",
-        "v2-firby-wireframe.jpg"
+        "firby-wireframe.jpg",
+        "firby-large.jpg",
+        "firby-close-128-lighten.jpg"
       ],
       "videos": []
     }
