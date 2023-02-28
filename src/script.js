@@ -84,6 +84,8 @@ function slideRight() {
 function openSlideRight() {
   if (categorie < 1) {
     slideRight();
+  } else {
+    openCurrentCategory();
   }
 }
 

@@ -209,18 +209,17 @@
           </div>
         </div>
       </div>
-      <div
+      <button
+        onclick="openSlideRight()"
         class="absolute top-1/2 left-1/2 h-[30vh] w-[20vh] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-t-full border-2 border-blue-first bg-blue-secondary sm:h-[45vh] sm:w-[30vh] md:h-[60vh] md:w-[40vh]"
       >
-        <button
+        <div
           id="butonOpen"
-          onclick="openSlideRight()"
           class="absolute top-1/2 left-1/2 inline-block -translate-y-1/2 -translate-x-1/2 select-none text-center text-[5vh] text-white duration-500 ease-in-out sm:text-[7.5vh] md:text-[10vh]"
         >
           <h2>OPEN</h2>
-        </button>
-        <button
-          onclick="openCurrentCategory()"
+        </div>
+        <div
           id="butonDiscover1"
           class="absolute top-1/2 left-1/2 h-1/2 translate-y-[250%] -translate-x-1/2 select-none duration-500 ease-in-out"
         >
@@ -228,9 +227,8 @@
           <h3 class="text-[3vh] text-white sm:text-[5vh] md:text-[7.5vh]">
             Discover
           </h3>
-        </button>
-        <button
-          onclick="openCurrentCategory()"
+        </div>
+        <div
           id="butonDiscover2"
           class="absolute top-1/2 left-1/2 h-1/2 translate-y-[250%] -translate-x-1/2 select-none duration-500 ease-in-out"
         >
@@ -238,9 +236,8 @@
           <h3 class="text-[3vh] text-white sm:text-[5vh] md:text-[7.5vh]">
             Discover
           </h3>
-        </button>
-        <button
-          onclick="openCurrentCategory()"
+        </div>
+        <div
           id="butonDiscover3"
           class="absolute top-1/2 left-1/2 h-1/2 translate-y-[250%] -translate-x-1/2 select-none duration-500 ease-in-out"
         >
@@ -248,8 +245,8 @@
           <h3 class="text-[3vh] text-white sm:text-[5vh] md:text-[7.5vh]">
             Discover
           </h3>
-        </button>
-      </div>
+        </div>
+      </button>
       <button
         id="nav-left"
         onclick="slideLeft()"
