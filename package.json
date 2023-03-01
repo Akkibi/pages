@@ -9,5 +9,9 @@
   },
   "dependencies": {
     "aos": "^2.3.4"
-  }
+  },
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./css/style.css --minify --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
+    }
 }

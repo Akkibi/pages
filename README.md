@@ -1,5 +1,7 @@
 # FR A propos de ce portfolio
 
+https://akkibi.github.io/portfolio/pages/index.html
+
 ## Projet non fini FR
 
 Concernant mon projet de portfolio, je suis désolé de ne pas avoir été en mesure de **le finaliser** selon vos attentes jusqu'à présent.
@@ -26,10 +28,10 @@ Pour lancer le site localement il vous suffit de vous diriger das le repertoire 
 
 ### Localhost Compilé
 
-Pour faire tourner ce projet localment compilé vous devez avoir Node.js installé, ensuite il suffit d'aller dans le répertoire du fichier tailwind.config.js et de lancer lancer la commande:
+Pour faire tourner ce projet localment vous devez avoir Node.js installé, ensuite lancez la commande:
 
 ```
-npx tailwindcss -i ./src/input.css -o ./css/style.css --minify --watch
+npm start
 ```
 
 pour compiler le code de la page tailwind au repertoire css/style.css (--watch recompile automatiquement la page lorsqu'il y a une sauvegarde)
@@ -60,10 +62,8 @@ To launch the site locally, simply go to the /pages directory and double-click o
 
 ### Localhost Compiled
 
-To run this locally compiled project you must have Node.js installed, then just go to the directory of the tailwind.config.js file and run run the command:
+To run this locally you must have Node.js installed, then run
 
 ```
-npx tailwindcss -i ./src/input.css -o ./css/style.css --minify --watch
+npm start
 ```
-
-to compile the tailwind page code to the css/style.css directory (--watch automatically recompiles the page when there is a save)
