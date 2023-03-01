@@ -121,45 +121,25 @@ function openCurrentVideo(nomVideo) {
       if (!projectData) {
         console.error("Project not found in data.json");
       }
-      bigImage = document.getElementById("see-big-image").style;
-      bigSection = document.getElementById("see-big-section").style;
-      urlVideo =
-        "../assets/" +
-        projectData.name +
-        "/video-" +
-        nomVideo.substr(0, nomVideo.length - 3) +
-        "mp4";
-
-      bigSection.display = "block";
-      bigImage.display = "block";
-      document.getElementById("see-big-image").innerHTML =
-        `<video class="absolute"
-    id="my-video z-40"
-    controls
-    autoplay
-    width="100%"
-    height="100%"
-    style="height:100vh;width:100vw"
-    playsinline
-  >
-    <source src="` +
+      document.getElementById("VideoElement").style.display = "block";
+      document.getElementById("loadElement").style.display = "block";
+      urlVideo = nomVideo.substr(0, nomVideo.length - 4);
+      document.getElementById("youtubeIframe").innerHTML =
+        `
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/` +
         urlVideo +
-        `"type="video/mp4">
-  </video>
-  <button
-      onclick="closeBig()"
-      class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-first bg-blue-first font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent z-50"
-    >
-      <img
-        id="close"
-        class="pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 duration-200"
-        src="../public/close.svg"
-      />
-    </button>
-  `;
+        `"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>`;
       console.log(
-        bigSection.innerHTML,
-        document.getElementById("see-big-image").innerHTML
+        document.getElementById("videoElement").innerHTML,
+        document.getElementById("loadElement").innerHTML
       );
     });
 }

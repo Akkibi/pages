@@ -241,18 +241,25 @@
       <!-- partie chargement de l'image et ou de la video -->
       <div
         id="loadElement"
-        class="absolute inset-0 hidden h-screen w-screen bg-[rgba(0,0,0,0.5)]"
+        class="absolute inset-0 z-50 hidden h-full w-full bg-[rgba(0,0,0,0.5)]"
       >
         <button
           id="imageElement"
           onclick="closeBig()"
-          class="absolute inset-0 z-50 m-0 hidden h-screen w-screen"
+          class="absolute inset-0 z-50 m-0 hidden h-full w-full"
           style="
             background: url(../public/error404.jpg) no-repeat center;
             background-size: contain;
           "
         ></button>
-        <div id="VideoElement" class="inset-0 hidden h-full w-full bg-black">
+        <div
+          id="VideoElement"
+          class="inset-0 hidden h-full w-full bg-transparent"
+        >
+          <div
+            id="youtubeIframe"
+            class="inset-0 h-full w-full bg-transparent"
+          ></div>
           <button
             id="nav-toggle"
             onclick="closeBig()"
