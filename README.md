@@ -1,6 +1,6 @@
 # FR A propos de ce portfolio
 
-https://akkibi.github.io/portfolio/pages/index.html
+[akkibi.github.io/portfolio/](https://akkibi.github.io/portfolio/pages/index.html)
 
 ## Projet non fini FR
 
