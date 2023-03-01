@@ -238,20 +238,35 @@
           src="../public/right.svg"
         />
       </button>
-      <button
-        id="see-big-section"
-        onclick="closeBig()"
-        class="absolute inset-0 z-50 m-0 hidden h-screen w-screen bg-[rgba(0,0,0,0.5)]"
+      <!-- partie chargement de l'image et ou de la video -->
+      <div
+        id="loadElement"
+        class="absolute inset-0 hidden h-screen w-screen bg-[rgba(0,0,0,0.5)]"
       >
-        <div
-          id="see-big-image"
+        <button
+          id="imageElement"
+          onclick="closeBig()"
+          class="absolute inset-0 z-50 m-0 hidden h-screen w-screen"
           style="
-            background: url(../public/work.jpg) no-repeat center;
+            background: url(../public/error404.jpg) no-repeat center;
             background-size: contain;
           "
-          class="inset-0 m-0 h-full w-full"
-        ></div>
-      </button>
+        ></button>
+        <div id="VideoElement" class="inset-0 hidden h-full w-full bg-black">
+          <button
+            id="nav-toggle"
+            onclick="closeBig()"
+            class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-first bg-blue-first font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent sm:hover:scale-110 sm:hover:bg-transparent"
+          >
+            <img
+              id="close"
+              class="pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 duration-200"
+              src="../public/close.svg"
+            />
+          </button>
+        </div>
+      </div>
+      <!-- fin partie video image -->
     </div>
     <!-- stop can move -->
     <button

@@ -133,13 +133,30 @@ function openCurrentVideo(nomVideo) {
       bigSection.display = "block";
       bigImage.display = "block";
       document.getElementById("see-big-image").innerHTML =
-        `<video id="openVideo" width="100%" height="100%" controls="controls" style="height:100vh;width:100vw"/>
-        <source src="` +
+        `<video class="absolute"
+    id="my-video z-40"
+    controls
+    autoplay
+    width="100%"
+    height="100%"
+    style="height:100vh;width:100vw"
+    playsinline
+  >
+    <source src="` +
         urlVideo +
-        `"
-        type="video/mp4">
-        </video>
-        `;
+        `"type="video/mp4">
+  </video>
+  <button
+      onclick="closeBig()"
+      class="absolute left-1/2 bottom-0 box-border h-14 w-14 translate-x-[-50%] translate-y-[-50%] cursor-pointer select-none rounded-full border-2 border-blue-first bg-blue-first font-bold text-white duration-200 ease-out active:scale-90 active:bg-transparent z-50"
+    >
+      <img
+        id="close"
+        class="pointer-events-none absolute top-1/2 left-1/2 aspect-square h-4 translate-x-[-50%] translate-y-[-50%] scale-150 duration-200"
+        src="../public/close.svg"
+      />
+    </button>
+  `;
       console.log(
         bigSection.innerHTML,
         document.getElementById("see-big-image").innerHTML
@@ -156,7 +173,7 @@ function openCurrentImage(nomImage) {
       if (!projectData) {
         console.error("Project not found in data.json");
       }
-      bigImage = document.getElementById("see-big-image").style;
+      bigImage = document.getElementById("imageElement").style;
       if (!nomImage) {
         bigImage.background =
           "url(../assets/" +
@@ -172,23 +189,24 @@ function openCurrentImage(nomImage) {
           nomImage +
           ") no-repeat center";
       }
-      document.getElementById("see-big-section").style.display = "block";
+      document.getElementById("loadElement").style.display = "block";
+      document.getElementById("imageElement").style.display = "block";
       bigImage.backgroundSize = "contain";
-      bigImage.display = "block";
     });
 }
 function closeBig() {
   console.log("close image");
-  bigImage = document.getElementById("see-big-image");
-  bigSection = document.getElementById("see-big-section");
-  if (document.getElementById("openVideo")) {
-    currentVideo = document.getElementById("openVideo");
-    currentVideo.pause();
+  loadElement = document.getElementById("loadElement");
+  imageElement = document.getElementById("imageElement");
+  if (document.getElementById("my-video") != undefined) {
+    currentVideo = document.getElementById("my-video");
+    currentVideo.currentTime = 10000;
+    currentVideo.remove();
     bigImage.innerHTML = "";
-    console.log("ça marche ->", bigImage.innerHTML), "<-";
   }
-  bigImage.style.backgroundImage = null;
-  bigSection.style.display = null;
+  imageElement.style.display = null;
+  imageElement.style.backgroundImage = null;
+  loadElement.style.display = null;
 }
 
 //when right arrow is clicked
@@ -254,7 +272,7 @@ scrollable.addEventListener("wheel", (event) => {
   event.preventDefault();
 
   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollable.scrollLeft += delta * 40;
+  scrollable.scrollLeft -= delta * 40;
 });
 
 const scrollablePhone = document.getElementById("scrollablePhone");
@@ -263,5 +281,11 @@ scrollablePhone.addEventListener("wheel", (event) => {
   event.preventDefault();
 
   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollablePhone.scrollLeft += delta * 30;
+  scrollablePhone.scrollLeft -= delta * 30;
 });
+
+// document.getElementById("my-video").addEventListener("click", (event) => {
+//   document.getElementById("my-video");
+//   // event.preventDefault();
+//   console.log("arret!!", event);
+// });
