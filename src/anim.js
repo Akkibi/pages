@@ -71,3 +71,5 @@ scrollable.addEventListener("wheel", (event) => {
     i = 0;
   }
 });
+
+scrollable.addEventListener("touchmove", (event) => {});
