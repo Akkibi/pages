@@ -262,25 +262,6 @@ function imageLeft() {
   }
 }
 
-//scroll horizontal to vertical
-const scrollable = document.getElementById("scrollable");
-
-scrollable.addEventListener("wheel", (event) => {
-  event.preventDefault();
-
-  const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollable.scrollLeft -= delta * 40;
-});
-
-const scrollablePhone = document.getElementById("scrollablePhone");
-
-scrollablePhone.addEventListener("wheel", (event) => {
-  event.preventDefault();
-
-  const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-  scrollablePhone.scrollLeft -= delta * 30;
-});
-
 function imageExists(image_url) {
   var http = new XMLHttpRequest();
 
@@ -289,3 +270,35 @@ function imageExists(image_url) {
 
   return http.status != 404;
 }
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeBig();
+  }
+});
+
+//scroll horizontal to vertical
+const scrollable = document.getElementById("scrollable");
+
+// Désactiver le défilement vertical de l'élément lorsqu'un geste est détecté
+// scrollable.addEventListener(
+//   "touchmove",
+//   function (event) {
+//     // Empêcher le défilement par défaut
+//     event.preventDefault();
+//   },
+//   { passive: false }
+// );
+
+// scrollable.addEventListener("wheel", (event) => {
+//   event.preventDefault();
+
+//   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+//   scrollable.scrollLeft -= delta * 40;
+// });
+
+scrollable.addEventListener("wheel", (event) => {
+  event.preventDefault();
+  // console.log(event);
+  scrollable.scrollLeft += event.deltaY * 2;
+});

@@ -20,7 +20,7 @@
 
 /* images carousel */
 #categoryImage1 {
-  background: url(../public/doublekingportfolio.png) repeat center;
+  background: url(../public/doublekingportfolio.jpg) repeat center;
   background-size: cover;
 }
 #categoryImage2 {
@@ -119,7 +119,7 @@ body[data-nav="true"] > #nav-toggle > #close {
     -webkit-tap-highlight-color: transparent;
   }
   #categoryImage1 {
-    background: url(../public/doublekingportfoliophone.png) repeat center;
+    background: url(../public/doublekingportfoliophone.jpg) repeat center;
     background-size: cover;
   }
 }
