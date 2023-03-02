@@ -14,12 +14,12 @@ gsap.from(".slide-in-last-right", {
   ease: "power2.out",
 });
 
-// gsap.from(".letter-appear", {
-//   rotation: 45,
-//   opacity: 0,
-//   y: 200,
-//   duration: 0.5,
-//   delay: 0,
-//   ease: "power2.out",
-//   stagger: 0.1,
-// });
+gsap.from(".letter-appear", {
+  rotation: 45,
+  opacity: 0,
+  y: 200,
+  duration: 0.5,
+  delay: 0,
+  ease: "power2.out",
+  stagger: 0.1,
+});
