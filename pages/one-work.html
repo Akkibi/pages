@@ -243,9 +243,11 @@
         id="loadElement"
         class="absolute inset-0 z-50 hidden h-full w-full bg-[rgba(0,0,0,0.5)]"
       >
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <p class="inline-block text-white">Loading...</p>
-      </div>
+        <div
+          id="loading"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <p class="inline-block select-none text-white">Loading...</p>
         </div>
         <button
           id="imageElement"
@@ -258,11 +260,11 @@
         ></button>
         <div
           id="videoElement"
-          class="inset-0 hidden h-full w-full bg-transparent"
+          class="inset-0 z-50 hidden h-full w-full bg-transparent"
         >
           <div
             id="youtubeIframe"
-            class="inset-0 h-full w-full bg-transparent"
+            class="absolute inset-0 h-full w-full bg-transparent"
           ></div>
           <button
             id="nav-toggle"
