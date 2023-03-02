@@ -1,12 +1,20 @@
 {
   "3dProjects": [
     {
-      "name": "",
-      "date": "//2022",
-      "title": "",
-      "description": "",
-      "images": [".png"],
-      "videos": [".png", ".png", ".png"]
+      "name": "cv-video",
+      "date": "11/01/2023",
+      "title": "CV vidéo",
+      "description": "Ce projet m'a appris a faire du montage vidéo sur blender il m'a aussi appris à utiliser stable diffusion ainsi que d'autres ia de génération d'images pour la création d'image, de depth map et autres éléments.",
+      "images": [
+        "miniature.png",
+        "end-screen.png",
+        "pinboard.png",
+        "church.png",
+        "depth.png",
+        "cadre.png",
+        "cadre-dust.png"
+      ],
+      "videos": ["JpRU3J0zjig.png"]
     },
     {
       "name": "araignee-qui-marche",
@@ -27,6 +35,14 @@
         "firby-wireframe.jpg"
       ],
       "videos": []
+    },
+    {
+      "name": "",
+      "date": "//2022",
+      "title": "",
+      "description": "",
+      "images": [".png", ".png", ".png"],
+      "videos": [".png", ".png", ".png"]
     }
   ],
   "2dProjects": [
