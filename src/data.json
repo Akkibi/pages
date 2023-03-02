@@ -1,4 +1,14 @@
 {
+  "Template": [
+    {
+      "name": "",
+      "date": "//2022",
+      "title": "",
+      "description": "",
+      "images": [".png", ".png", ".png"],
+      "videos": [".png", ".png", ".png"]
+    }
+  ],
   "3dProjects": [
     {
       "name": "cv-video",
@@ -35,14 +45,6 @@
         "firby-wireframe.jpg"
       ],
       "videos": []
-    },
-    {
-      "name": "",
-      "date": "//2022",
-      "title": "",
-      "description": "",
-      "images": [".png", ".png", ".png"],
-      "videos": [".png", ".png", ".png"]
     }
   ],
   "2dProjects": [
