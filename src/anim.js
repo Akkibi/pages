@@ -61,11 +61,13 @@ function myRandom(max) {
 }
 
 const scrollable = document.getElementById("scrollable");
+let i = 0;
 
 scrollable.addEventListener("wheel", (event) => {
-  gsap.effects.fade(
-    document.querySelectorAll(".letter-appear")[
-      myRandom(document.querySelectorAll(".letter-appear").length)
-    ]
-  );
+  if (i < document.querySelectorAll(".letter-appear").length) {
+    gsap.effects.fade(document.querySelectorAll(".letter-appear")[i]);
+    i++;
+  } else {
+    i = 0;
+  }
 });

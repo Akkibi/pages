@@ -226,7 +226,7 @@ function imageRight() {
       // add 1 to the id
       let newId = parseInt(id);
       console.log(projectData.length);
-      if (parseInt(id) + 1 <= projectData.length) {
+      if (parseInt(id) + 1 < projectData.length) {
         newId = parseInt(id) + 1;
 
         // set the new id to the URL
@@ -279,23 +279,6 @@ document.addEventListener("keydown", function (event) {
 
 //scroll horizontal to vertical
 const scrollable = document.getElementById("scrollable");
-
-// Désactiver le défilement vertical de l'élément lorsqu'un geste est détecté
-// scrollable.addEventListener(
-//   "touchmove",
-//   function (event) {
-//     // Empêcher le défilement par défaut
-//     event.preventDefault();
-//   },
-//   { passive: false }
-// );
-
-// scrollable.addEventListener("wheel", (event) => {
-//   event.preventDefault();
-
-//   const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
-//   scrollable.scrollLeft -= delta * 40;
-// });
 
 scrollable.addEventListener("wheel", (event) => {
   event.preventDefault();
