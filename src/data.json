@@ -1,40 +1,32 @@
 {
   "3dProjects": [
     {
+      "name": "",
+      "date": "//2022",
+      "title": "",
+      "description": "",
+      "images": [".png"],
+      "videos": [".png", ".png", ".png"]
+    },
+    {
+      "name": "araignee-qui-marche",
+      "date": "29/11/2022",
+      "title": "Cycle de marche d'une arraignée",
+      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
+      "images": ["step4.png"],
+      "videos": ["_X9301nrFYA.png", "tTwpU5etMNE.png", "XbXeqAd5QDg.png"]
+    },
+    {
       "name": "firby",
       "date": "25/02/2023",
       "title": "3D Cursed worm Firby",
-      "description": "This is my first 3D character with hair, a cursed Firby. I created him with the intention of learning more about fair particules in blender.",
+      "description": "C'est mon premier personnage 3D avec des poils, un Furby étrange. Je l'ai créé avec l'intention d'en apprendre plus sur la génération de particules sur blender.",
       "images": [
         "firby-close-128-lighten.jpg",
         "firby-large.jpg",
         "firby-wireframe.jpg"
       ],
-      "videos": ["JpRU3J0zjig.jpg"]
-    },
-    {
-      "name": "firby",
-      "date": "25/02/2023",
-      "title": "blabla3",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "images": [
-        "firby-wireframe.jpg",
-        "firby-close-128-lighten.jpg",
-        "firby-large.jpg"
-      ],
-      "videos": ["myvideo.mp4"]
-    },
-    {
-      "name": "firby",
-      "date": "25/02/2023",
-      "title": "blabla2",
-      "description": "Some text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "images": [
-        "firby-large.jpg",
-        "firby-wireframe.jpg",
-        "firby-close-128-lighten.jpg"
-      ],
-      "videos": ["myvideo.mp4"]
+      "videos": []
     }
   ],
   "2dProjects": [
