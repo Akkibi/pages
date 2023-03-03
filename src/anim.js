@@ -49,27 +49,55 @@ gsap.registerEffect({
   },
 });
 
-document.querySelectorAll(".letter-appear").forEach(function (box) {
-  box.addEventListener("mouseenter", function () {
-    gsap.effects.fade(this);
-  });
-});
-
 function myRandom(max) {
-  // return Math.random() * max;
   return Math.floor(Math.random() * max);
 }
 
-const scrollable = document.getElementById("scrollable");
-let i = 0;
+// document.querySelectorAll(".letter-appear").forEach(function (box) {
+//   box.addEventListener("mouseenter", function () {
+//     gsap.effects.fade(this);
+//   });
+// });
 
-scrollable.addEventListener("wheel", (event) => {
-  if (i < document.querySelectorAll(".letter-appear").length) {
-    gsap.effects.fade(document.querySelectorAll(".letter-appear")[i]);
-    i++;
-  } else {
-    i = 0;
-  }
+const scrollable = document.getElementById("scrollable");
+// let i = 0;
+
+// scrollable.addEventListener("wheel", (event) => {
+//   if (i < document.querySelectorAll(".letter-appear").length) {
+//     gsap.effects.fade(document.querySelectorAll(".letter-appear")[i]);
+//     i++;
+//   } else {
+//     i = 0;
+//   }
+// });
+
+const timeline = gsap.timeline();
+
+scrollable.addEventListener("touchmove", (event) => {
+  moveText(event);
 });
 
-scrollable.addEventListener("touchmove", (event) => {});
+var canMove = true;
+
+scrollable.addEventListener("wheel", (event) => {
+  moveText(event);
+});
+
+function moveText(event) {
+  if (canMove) {
+    canMove = false;
+    console.log(event);
+    timeline.to(".letter-appear", {
+      y: -window.innerHeight,
+      duration: 1 / Math.abs(event.deltaY),
+    });
+    timeline.to("#bar", { y: -window.innerHeight, duration: 0.5 }, "<");
+    timeline.to(".letter-appear", {
+      y: window.innerHeight,
+      duration: 0,
+    });
+    timeline.to("#bar", { y: window.innerHeight, duration: 0 }, "<");
+    timeline.to(".letter-appear", { y: 0, duration: 0.5 });
+    timeline.to("#bar", { y: 0, duration: 0.5, opacity: 1 }, "<");
+  }
+}

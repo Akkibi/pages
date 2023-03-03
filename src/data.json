@@ -1,6 +1,14 @@
 {
   "3dProjects": [
     {
+      "name": "araignee-qui-marche",
+      "date": "29/11/2022",
+      "title": "Cycle de marche d'une arraignée",
+      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
+      "images": ["step4.png"],
+      "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"]
+    },
+    {
       "name": "cv-video",
       "date": "11/01/2023",
       "title": "CV vidéo",
@@ -15,14 +23,6 @@
         "cadre-dust.png"
       ],
       "videos": ["JpRU3J0zjig.png"]
-    },
-    {
-      "name": "araignee-qui-marche",
-      "date": "29/11/2022",
-      "title": "Cycle de marche d'une arraignée",
-      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
-      "images": ["step4.png"],
-      "videos": ["_X9301nrFYA.png", "tTwpU5etMNE.png", "XbXeqAd5QDg.png"]
     },
     {
       "name": "firby",
