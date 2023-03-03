@@ -14,7 +14,7 @@ gsap.from("#slide-in-last-right", {
 });
 
 gsap.from(".letter-appear", {
-  rotation: 30,
+  // rotation: 30,
   opacity: 0,
   y: 100,
   duration: 0.25,
@@ -88,16 +88,17 @@ function moveText(event) {
     canMove = false;
     console.log(event);
     timeline.to(".letter-appear", {
-      y: -window.innerHeight,
-      duration: 1 / Math.abs(event.deltaY),
+      y: -200,
+      opacity: 0,
+      duration: 0.5,
     });
-    timeline.to("#bar", { y: -window.innerHeight, duration: 0.5 }, "<");
+    timeline.to("#bar", { y: -200, duration: 0.5, opacity: 0 }, "<");
     timeline.to(".letter-appear", {
-      y: window.innerHeight,
+      y: 200,
       duration: 0,
     });
-    timeline.to("#bar", { y: window.innerHeight, duration: 0 }, "<");
-    timeline.to(".letter-appear", { y: 0, duration: 0.5 });
+    timeline.to("#bar", { y: 200, duration: 0 }, "<");
+    timeline.to(".letter-appear", { y: 0, duration: 0.5, opacity: 1 });
     timeline.to("#bar", { y: 0, duration: 0.5, opacity: 1 }, "<");
   }
 }
