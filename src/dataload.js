@@ -58,7 +58,7 @@ function updateContent() {
           onclick="openCurrentVideo('` +
               projectData.videos[j] +
               `')"
-          class="mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
+          class="mr-[2.5vw] aspect-[2/3] min-w-fit rounded-3xl border-2 border-blue-first h-full"
           style="
             background: url(../assets/` +
               projectData.name +
@@ -81,7 +81,7 @@ function updateContent() {
           onclick="openCurrentImage('` +
               projectData.images[i] +
               `')"
-          class="mr-[2.5vw] aspect-[2/3] rounded-3xl border-2 border-blue-first"
+          class="mr-[2.5vw] min-w-fit aspect-[2/3] h-full rounded-3xl border-2 border-blue-first"
           style="
             background: url(../assets/` +
               projectData.name +
