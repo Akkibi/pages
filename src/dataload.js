@@ -37,6 +37,7 @@ function updateContent() {
         //replace Date, Title and description
         document.getElementById("dateReplace").innerText = projectData.date;
         document.getElementById("titleReplace").innerText = projectData.title;
+        document.getElementById("linkReplace").innerText = projectData.title;
         document.getElementById("descriptionReplace").innerText =
           projectData.description;
 

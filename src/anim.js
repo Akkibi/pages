@@ -98,7 +98,9 @@ function moveText(event) {
       duration: 0,
     });
     timeline.to("#bar", { y: 200, duration: 0 }, "<");
+    timeline.to("#text-appear", { y: 200, duration: 0, opacity: 0 }, "<");
     timeline.to(".letter-appear", { y: 0, duration: 0.5, opacity: 1 });
-    timeline.to("#bar", { y: 0, duration: 0.5, opacity: 1 }, "<");
+    timeline.to("#bar", { y: 0, duration: 0.5, opacity: 0.5 }, "<");
+    timeline.to("#text-appear", { y: 0, duration: 0.5, opacity: 1 }, "<");
   }
 }
