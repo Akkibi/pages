@@ -107,6 +107,14 @@ body[data-nav="true"] > #nav-toggle > #close {
   transform: translate(-50%, -50%) scale(2);
 }
 
+body[data-nav="true"] > #nav-toggle {
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+body[data-nav="true"] > #moveUp > #arrow-back {
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
 @media (max-width: 640px) {
   .slide {
     animation-name: movx;

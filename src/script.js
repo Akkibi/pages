@@ -18,44 +18,44 @@ function changeDivCSS() {
       "translate(-50% , -50%)";
     document.getElementById("butonDiscover2").style.transform =
       "translate(-50% , 250%)";
-    if (categorie > 1) {
-      document.getElementById("butonDiscover1").style.transform =
-        "translate(-50% , -350%)";
-      document.getElementById("butonDiscover2").style.transform =
-        "translate(-50% , -50%)";
-      document.getElementById("butonDiscover3").style.transform =
-        "translate(-50% , 250%)";
-
-      var div = document.getElementById("category2");
-      div.style.width = "200vw";
-      div.style.height = "400vh";
-      if (categorie > 2) {
-        document.getElementById("butonDiscover2").style.transform =
-          "translate(-50% , -350%)";
-        document.getElementById("butonDiscover3").style.transform =
-          "translate(-50% , -50%)";
-
-        var div = document.getElementById("category3");
-        div.style.width = "200vw";
-        div.style.height = "400vh";
-      } else {
-        var div = document.getElementById("category3");
-        div.style.width = null;
-        div.style.height = null;
-        document.getElementById("butonDiscover3").style.transform = null;
-      }
-    } else {
-      var div = document.getElementById("category2");
-      div.style.width = null;
-      div.style.height = null;
-      document.getElementById("butonDiscover2").style.transform = null;
-    }
   } else {
     var div = document.getElementById("category1");
     div.style.width = null;
     div.style.height = null;
     document.getElementById("butonDiscover1").style.transform = null;
     document.getElementById("butonOpen").style.transform = null;
+  }
+  if (categorie > 1) {
+    document.getElementById("butonDiscover1").style.transform =
+      "translate(-50% , -350%)";
+    document.getElementById("butonDiscover2").style.transform =
+      "translate(-50% , -50%)";
+    document.getElementById("butonDiscover3").style.transform =
+      "translate(-50% , 250%)";
+
+    var div = document.getElementById("category2");
+    div.style.width = "200vw";
+    div.style.height = "400vh";
+  } else {
+    var div = document.getElementById("category2");
+    div.style.width = null;
+    div.style.height = null;
+    document.getElementById("butonDiscover2").style.transform = null;
+  }
+  if (categorie > 2) {
+    document.getElementById("butonDiscover2").style.transform =
+      "translate(-50% , -350%)";
+    document.getElementById("butonDiscover3").style.transform =
+      "translate(-50% , -50%)";
+
+    var div = document.getElementById("category3");
+    div.style.width = "200vw";
+    div.style.height = "400vh";
+  } else {
+    var div = document.getElementById("category3");
+    div.style.width = null;
+    div.style.height = null;
+    document.getElementById("butonDiscover3").style.transform = null;
   }
 }
 

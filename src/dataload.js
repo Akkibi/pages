@@ -286,3 +286,7 @@ scrollable.addEventListener("wheel", (event) => {
   // console.log(event);
   scrollable.scrollLeft += event.deltaY * 2;
 });
+
+function goBack() {
+  window.location.href = "../pages/all-work.html";
+}
