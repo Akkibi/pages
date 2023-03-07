@@ -7,10 +7,7 @@
       "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
       "images": ["step4.png", "no-shader.png"],
       "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"],
-      "links": [
-        ["", ""],
-        ["", ""]
-      ]
+      "link": ["", ""]
     },
     {
       "name": "cv-video",
