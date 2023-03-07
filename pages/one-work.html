@@ -177,7 +177,16 @@
         <button
           onclick="openCurrentImage()"
           class="backgroundReplace h-1/2 w-full flex-initial rounded-3xl border-2 border-blue-first sm:aspect-[2/3] sm:h-full lg:aspect-square"
-        ></button>
+        >
+          <div
+            style="
+              background-image: url(../public/expand.svg);
+              background-size: 5vh;
+            "
+            alt="expand icon"
+            class="h-full w-full bg-right-bottom bg-no-repeat"
+          ></div>
+        </button>
         <div
           id="scrollablePhone"
           class="flex h-1/2 flex-shrink-0 flex-col flex-nowrap overflow-x-scroll sm:h-full sm:overflow-hidden"

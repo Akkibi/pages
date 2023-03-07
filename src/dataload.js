@@ -37,7 +37,7 @@ function updateContent() {
         //replace Date, Title and description
         document.getElementById("dateReplace").innerText = projectData.date;
         document.getElementById("titleReplace").innerText = projectData.title;
-        document.getElementById("linkReplace").innerText = projectData.title;
+        document.getElementById("linkReplace").innerText = projectData.link;
         document.getElementById("descriptionReplace").innerText =
           projectData.description;
 
@@ -69,7 +69,7 @@ function updateContent() {
             background-size: cover;
           "
         >
-        <div class="h-full w-full" style="background:url(../public/play.png) no-repeat center;  background-size: 5rem 5rem;"></div>
+        <div class="h-full w-full" style="background:url(../public/play.png) no-repeat center;  background-size: 6vh 6vh;"></div>
         </button>`;
           }
         }
@@ -91,7 +91,16 @@ function updateContent() {
               `) center;
             background-size: cover;
           "
-        ></button>`;
+        >
+        <div
+          style="
+            background-image: url(../public/expand.svg);
+            background-size: 5vh;
+          "
+          alt="expand icon"
+          class="h-full w-full bg-right-bottom bg-no-repeat"
+        ></div>
+        </button>`;
           }
         }
 

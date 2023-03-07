@@ -5,8 +5,12 @@
       "date": "29/11/2022",
       "title": "Cycle de marche d'une arraignée",
       "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
-      "images": ["step4.png"],
-      "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"]
+      "images": ["step4.png", "no-shader.png"],
+      "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"],
+      "links": [
+        ["", ""],
+        ["", ""]
+      ]
     },
     {
       "name": "cv-video",
@@ -25,6 +29,36 @@
       "videos": ["JpRU3J0zjig.png"]
     },
     {
+      "name": "video-eiffel",
+      "date": "16/12/2022",
+      "title": "Podcast femme Eiffel",
+      "description": "Ce projet a été produis dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a appris a créer des scène blender complexes en utilisant des géometry nodes.",
+      "images": [
+        "3d-video.png",
+        "image-eiffel-4.jpg",
+        "image-eiffel-1.jpg",
+        "image-eiffel-2.jpg",
+        "image-eiffel-3.jpg"
+      ],
+      "videos": ["nm0cn8qMjdo.png"]
+    },
+    {
+      "name": "space-trou-noir",
+      "date": "16/12/2022",
+      "title": "Trou noir, space station",
+      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
+      "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
+      "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"]
+    },
+    {
+      "name": "robot-rating",
+      "date": "16/12/2022",
+      "title": "Animations de robots humains dans un hangar",
+      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
+      "images": ["hangar.png", "hangar-with-man.png"],
+      "videos": ["0j72j8q1Egg.png", "79bDVgpSPBc.png"]
+    },
+    {
       "name": "firby",
       "date": "25/02/2023",
       "title": "3D Cursed worm Firby",
@@ -35,20 +69,6 @@
         "firby-wireframe.jpg"
       ],
       "videos": []
-    },
-    {
-      "name": "video-eiffel",
-      "date": "16/12/2022",
-      "title": "Podcast femme Eiffel",
-      "description": "Ce projet a été produis dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer",
-      "images": [
-        "3d-video.png",
-        "image-eiffel-4.jpg",
-        "image-eiffel-1.jpg",
-        "image-eiffel-2.jpg",
-        "image-eiffel-3.jpg"
-      ],
-      "videos": ["nm0cn8qMjdo.png"]
     }
   ],
   "2dProjects": [
