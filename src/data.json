@@ -23,7 +23,8 @@
         "cadre.png",
         "cadre-dust.png"
       ],
-      "videos": ["JpRU3J0zjig.png"]
+      "videos": ["JpRU3J0zjig.png"],
+      "link": ["", ""]
     },
     {
       "name": "video-eiffel",
@@ -37,7 +38,8 @@
         "image-eiffel-2.jpg",
         "image-eiffel-3.jpg"
       ],
-      "videos": ["nm0cn8qMjdo.png"]
+      "videos": ["nm0cn8qMjdo.png"],
+      "link": ["", ""]
     },
     {
       "name": "space-trou-noir",
@@ -45,7 +47,8 @@
       "title": "Trou noir, space station",
       "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
       "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
-      "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"]
+      "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"],
+      "link": ["", ""]
     },
     {
       "name": "robot-rating",
@@ -53,7 +56,8 @@
       "title": "Animations de robots humains dans un hangar",
       "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
       "images": ["hangar.png", "hangar-with-man.png"],
-      "videos": ["0j72j8q1Egg.png", "79bDVgpSPBc.png"]
+      "videos": ["0j72j8q1Egg.png", "79bDVgpSPBc.png"],
+      "link": ["", ""]
     },
     {
       "name": "firby",
@@ -65,7 +69,8 @@
         "firby-large.jpg",
         "firby-wireframe.jpg"
       ],
-      "videos": []
+      "videos": [],
+      "link": ["", ""]
     }
   ],
   "2dProjects": [
@@ -79,7 +84,8 @@
         "2d-firby-large.jpg",
         "2d-firby-wireframe.jpg"
       ],
-      "videos": []
+      "videos": [],
+      "link": ["", ""]
     },
     {
       "name": "projet2",
@@ -91,7 +97,8 @@
         "2d-v2-firby-large.jpg",
         "2d-v2-firby-wireframe.jpg"
       ],
-      "videos": []
+      "videos": [],
+      "link": ["", ""]
     }
   ]
 }
