@@ -119,6 +119,7 @@ body[data-nav="true"] > #moveUp > #arrow-back {
   .slide {
     animation-name: movx;
   }
+
   input,
   textarea,
   button,
@@ -134,6 +135,11 @@ body[data-nav="true"] > #moveUp > #arrow-back {
 @media (min-width: 640px) {
   .slide {
     animation-name: movy;
+  }
+  /* animation cards */
+  .cards:hover {
+    /* z-index: 1; */
+    transition: all 0.15s ease;
   }
 }
 .slide {

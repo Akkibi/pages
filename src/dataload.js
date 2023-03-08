@@ -65,7 +65,7 @@ function updateContent() {
           onclick="openCurrentVideo('` +
               projectData.videos[j] +
               `')"
-          class="mr-[2.5vw] aspect-[2/3] min-w-fit rounded-3xl border-2 border-blue-first h-full"
+          class="cards mr-[2.5vw] aspect-[2/3] min-w-fit rounded-3xl border-2 border-blue-first h-full"
           style="
             background: url(../assets/` +
               projectData.name +
@@ -73,6 +73,8 @@ function updateContent() {
               projectData.videos[j] +
               `) center;
             background-size: cover;
+            transform-origin: 50% 50%;
+            transition: all 1s ease;
           "
         >
         <div class="h-full w-full" style="background:url(../public/play.png) no-repeat center;  background-size: 6vh 6vh;"></div>
@@ -88,7 +90,7 @@ function updateContent() {
           onclick="openCurrentImage('` +
               projectData.images[i] +
               `')"
-          class="mr-[2.5vw] min-w-fit aspect-[2/3] h-full rounded-3xl border-2 border-blue-first"
+          class="cards mr-[2.5vw] min-w-fit aspect-[2/3] h-full rounded-3xl border-2 border-blue-first"
           style="
             background: url(../assets/` +
               projectData.name +
@@ -96,6 +98,8 @@ function updateContent() {
               projectData.images[i] +
               `) center;
             background-size: cover;
+            transform-origin: 50% 50%;
+            transition: all 1s ease;
           "
         >
         <div
@@ -305,3 +309,33 @@ scrollable.addEventListener("wheel", (event) => {
 function goBack() {
   window.location.href = "../pages/all-work.html";
 }
+
+// load page
+document.addEventListener("DOMContentLoaded", function () {
+  // cards 3d move
+  console.log("cards go brrr");
+  $(".cards").mousemove(function (e) {
+    console.log("mousemove go brrr");
+    var offset = $(this).offset();
+    var relX = e.pageX - offset.left;
+    var relY = e.pageY - offset.top;
+    var offsetMinX = $(this).width();
+    var offsetMinY = $(this).height();
+    var currentX = (relX += offsetMinX * -0.5);
+    var currentY = (relY += offsetMinY * -0.5);
+    var newX = currentX / 500000;
+    var newY = currentY / 1000000;
+    $(this).css(
+      "transform",
+      "matrix3d(1.025,0,0," +
+        -newX +
+        ",0,1.025,0," +
+        -newY +
+        ",0,0,1,0,0,0,0,1)"
+    );
+  });
+  $(".cards").mouseout(function () {
+    console.log("mouseout go sad");
+    $(this).css("transform", "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
+  });
+});
