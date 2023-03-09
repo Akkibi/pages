@@ -63,7 +63,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body class="m-0 h-screen w-screen overflow-hidden bg-black" data-nav="false">
+  <body class="m-0 h-screen w-screen overflow-clip bg-black" data-nav="false">
     <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
       <img
         class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
@@ -168,28 +168,32 @@
     <!-- can move -->
     <div
       id="moveUp"
-      class="absolute m-0 h-full w-full overflow-hidden border-2 border-blue-first bg-black duration-500 ease-in-out"
+      class="absolute m-0 h-full w-full overflow-clip border-2 border-blue-first bg-black duration-500 ease-in-out"
     >
       <div
         id="scrollable"
-        class="m-0 flex h-full w-auto flex-col flex-nowrap gap-[5vw] p-[5vw] sm:flex-row sm:gap-[4vw] sm:overflow-x-scroll sm:p-[4vw] lg:gap-[2vw] lg:p-[2vw]"
+        class="m-0 flex h-full w-auto flex-col flex-nowrap gap-[5vw] overflow-y-clip p-[5vw] sm:flex-row sm:gap-[4vw] sm:overflow-x-scroll sm:p-[4vw] lg:gap-[2vw] lg:p-[2vw]"
       >
         <button
           onclick="openCurrentImage()"
-          class="backgroundReplace h-1/2 w-full flex-initial rounded-3xl border-2 border-blue-first sm:aspect-[2/3] sm:h-full lg:aspect-square"
+          class="cards h-1/2 w-full flex-initial sm:aspect-[2/3] sm:h-full lg:aspect-square"
         >
           <div
-            style="
-              background-image: url(../public/expand.svg);
-              background-size: 5vh;
-            "
-            alt="expand icon"
-            class="h-full w-full bg-right-bottom bg-no-repeat"
-          ></div>
+            class="subCards backgroundReplace h-full w-full rounded-3xl border-2 border-blue-first"
+          >
+            <div
+              style="
+                background-image: url(../public/expand.svg);
+                background-size: 5vh;
+              "
+              alt="expand icon"
+              class="h-full w-full bg-right-bottom bg-no-repeat"
+            ></div>
+          </div>
         </button>
         <div
           id="scrollablePhone"
-          class="flex h-1/2 flex-shrink-0 flex-col flex-nowrap overflow-x-scroll sm:h-full sm:overflow-hidden"
+          class="flex h-1/2 flex-shrink-0 flex-col flex-nowrap overflow-x-scroll sm:h-full sm:overflow-clip"
         >
           <div
             class="h-auto w-[87.5vw] pb-5 text-white sm:w-[75vw] md:w-[82.5] lg:w-[50vw]"

@@ -3,8 +3,8 @@
     {
       "name": "araignee-qui-marche",
       "date": "29/11/2022",
-      "title": "Cycle de marche d'une arraignée",
-      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une arraignée.",
+      "title": "Cycle de marche d'une araignée",
+      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une araignée.",
       "images": ["step4.png", "no-shader.png"],
       "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"],
       "link": ["", ""]
@@ -30,7 +30,7 @@
       "name": "video-eiffel",
       "date": "16/12/2022",
       "title": "Podcast sur la femme Eiffel",
-      "description": "Ce projet a été produis dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a appris a créer des scène blender complexes en utilisant des géometry nodes.",
+      "description": "Ce projet a été produit dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a apprit a créer des scènes blender complexes en utilisant des géometry nodes.",
       "images": [
         "3d-video.png",
         "image-eiffel-4.jpg",

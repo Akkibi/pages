@@ -136,11 +136,6 @@ body[data-nav="true"] > #moveUp > #arrow-back {
   .slide {
     animation-name: movy;
   }
-  /* animation cards */
-  .cards:hover {
-    /* z-index: 1; */
-    transition: all 0.15s ease;
-  }
 }
 .slide {
   animation-duration: 30s;

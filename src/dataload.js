@@ -54,6 +54,7 @@ function updateContent() {
           "/" +
           projectData.images[0] +
           ") center";
+        mainImage.transition = "all 0.15s ease-out";
         mainImage.backgroundSize = "cover";
 
         if (projectData.videos.length >= 1) {
@@ -65,20 +66,21 @@ function updateContent() {
           onclick="openCurrentVideo('` +
               projectData.videos[j] +
               `')"
-          class="cards mr-[2.5vw] aspect-[2/3] min-w-fit rounded-3xl border-2 border-blue-first h-full"
-          style="
-            background: url(../assets/` +
+          class="cards mr-[2.5vw] aspect-[2/3] min-w-fit h-full"
+        ><div
+        class="subCards backgroundReplace h-full w-full rounded-3xl border-2 border-blue-first"
+        style="
+          background: url(../assets/` +
               projectData.name +
               `/` +
               projectData.videos[j] +
               `) center;
-            background-size: cover;
-            transform-origin: 50% 50%;
-            transition: all 1s ease;
-          "
+          background-size: cover;
+          transform-origin: 50% 50%;
+          transition: all 0.15s ease;
+        "
         >
-        <div class="h-full w-full" style="background:url(../public/play.png) no-repeat center;  background-size: 6vh 6vh;"></div>
-        </button>`;
+        <div class="h-full w-full" style="background:url(../public/play.png) no-repeat center;  background-size: 6vh 6vh;"></div></div></button>`;
           }
         }
         if (projectData.images.length > 1) {
@@ -90,7 +92,9 @@ function updateContent() {
           onclick="openCurrentImage('` +
               projectData.images[i] +
               `')"
-          class="cards mr-[2.5vw] min-w-fit aspect-[2/3] h-full rounded-3xl border-2 border-blue-first"
+          class="cards mr-[2.5vw] min-w-fit aspect-[2/3] h-full"
+          ><div
+          class="subCards backgroundReplace h-full w-full rounded-3xl border-2 border-blue-first"
           style="
             background: url(../assets/` +
               projectData.name +
@@ -99,18 +103,10 @@ function updateContent() {
               `) center;
             background-size: cover;
             transform-origin: 50% 50%;
-            transition: all 1s ease;
+            transition: all 0.15s ease;
           "
-        >
-        <div
-          style="
-            background-image: url(../public/expand.svg);
-            background-size: 5vh;
-          "
-          alt="expand icon"
-          class="h-full w-full bg-right-bottom bg-no-repeat"
-        ></div>
-        </button>`;
+          >
+        <div style="background-image: url(../public/expand.svg);background-size: 5vh;"alt="expand icon"class="h-full w-full bg-right-bottom bg-no-repeat"></div></div></button>`;
           }
         }
 
@@ -120,6 +116,7 @@ function updateContent() {
         } else {
           updateOpacity();
         }
+        add3DEffect();
       }
     });
 }
@@ -310,32 +307,66 @@ function goBack() {
   window.location.href = "../pages/all-work.html";
 }
 
-// load page
-document.addEventListener("DOMContentLoaded", function () {
-  // cards 3d move
-  console.log("cards go brrr");
-  $(".cards").mousemove(function (e) {
-    console.log("mousemove go brrr");
-    var offset = $(this).offset();
-    var relX = e.pageX - offset.left;
-    var relY = e.pageY - offset.top;
-    var offsetMinX = $(this).width();
-    var offsetMinY = $(this).height();
-    var currentX = (relX += offsetMinX * -0.5);
-    var currentY = (relY += offsetMinY * -0.5);
-    var newX = currentX / 500000;
-    var newY = currentY / 1000000;
-    $(this).css(
-      "transform",
-      "matrix3d(1.025,0,0," +
-        -newX +
-        ",0,1.025,0," +
-        -newY +
-        ",0,0,1,0,0,0,0,1)"
-    );
+//3d effects on cards
+function add3DEffect() {
+  var cards = document.querySelectorAll(".cards");
+  console.log("cards", cards);
+  cards.forEach(function (card) {
+    console.log("card");
+    card.addEventListener("mousemove", function (e) {
+      var offset = this.getBoundingClientRect();
+      var relX = e.pageX - offset.left;
+      var relY = e.pageY - offset.top;
+      var offsetMinX = this.offsetWidth;
+      var offsetMinY = this.offsetHeight;
+      var currentX = (relX += offsetMinX * -0.5);
+      var currentY = (relY += offsetMinY * -0.5);
+      var newX = currentX / 1000000;
+      var newY = currentY / 2000000;
+
+      //get the id of card to select an other element with the same id
+      var cardId =
+        document.querySelectorAll(".subCards")[
+          Array.prototype.indexOf.call(cards, this)
+        ];
+      cardId.style.transform =
+        "matrix3d(1,0,0," + newX + ",0,1,0," + newY + ",0,0,1,0,0,0,0,1.1)";
+      cardId.style.zIndex = 10;
+    });
+    card.addEventListener("mouseleave", function () {
+      var cardId =
+        document.querySelectorAll(".subCards")[
+          Array.prototype.indexOf.call(cards, this)
+        ];
+      cardId.style.transform = "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)";
+      cardId.style.zIndex = 1;
+    });
   });
-  $(".cards").mouseout(function () {
-    console.log("mouseout go sad");
-    $(this).css("transform", "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
-  });
-});
+}
+
+// // cards 3d move
+// console.log("cards go brrr");
+// $(".cards").mousemove(function (e) {
+//   console.log(e);
+//   var offset = $(this).offset();
+//   var relX = e.pageX - offset.left;
+//   var relY = e.pageY - offset.top;
+//   var offsetMinX = $(this).width();
+//   var offsetMinY = $(this).height();
+//   var currentX = (relX += offsetMinX * -0.5);
+//   var currentY = (relY += offsetMinY * -0.5);
+//   var newX = currentX / 500000;
+//   var newY = currentY / 1000000;
+//   $(this).css(
+//     "transform",
+//     "matrix3d(1.025,0,0," +
+//       -newX +
+//       ",0,1.025,0," +
+//       -newY +
+//       ",0,0,1,0,0,0,0,1)"
+//   );
+// });
+// $(".cards").mouseout(function () {
+//   console.log("Mouse out");
+//   $(this).css("transform", "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
+// });
