@@ -1,3 +1,5 @@
+// const { check } = require("prettier");
+
 const toggleNav = () => {
   document.body.dataset.nav =
     document.body.dataset.nav === "true" ? "false" : "true";
@@ -5,19 +7,29 @@ const toggleNav = () => {
 AOS.init();
 
 var categorie = 0;
+var url = new URL(window.location.href);
+
+changeDivCSS();
 
 function changeDivCSS() {
+  // check if on category or project
+  if (url.searchParams.get("id")) {
+    return;
+  }
+
+  let newWidth = "200vw";
+  let newHeight = "400vh";
+  let butonHideTop = "translate(-50% , -350%)";
+  let butonHideBottom = "translate(-50% , 250%)";
+  let butonShow = "translate(-50% , -50%)";
   console.log(categorie);
   if (categorie > 0) {
     var div = document.getElementById("category1");
-    div.style.width = "200vw";
-    div.style.height = "400vh";
-    document.getElementById("butonOpen").style.transform =
-      "translate(-50% , -350%)";
-    document.getElementById("butonDiscover1").style.transform =
-      "translate(-50% , -50%)";
-    document.getElementById("butonDiscover2").style.transform =
-      "translate(-50% , 250%)";
+    div.style.width = newWidth;
+    div.style.height = newHeight;
+    document.getElementById("butonOpen").style.transform = butonHideTop;
+    document.getElementById("butonDiscover1").style.transform = butonShow;
+    document.getElementById("butonDiscover2").style.transform = butonHideBottom;
   } else {
     var div = document.getElementById("category1");
     div.style.width = null;
@@ -26,16 +38,13 @@ function changeDivCSS() {
     document.getElementById("butonOpen").style.transform = null;
   }
   if (categorie > 1) {
-    document.getElementById("butonDiscover1").style.transform =
-      "translate(-50% , -350%)";
-    document.getElementById("butonDiscover2").style.transform =
-      "translate(-50% , -50%)";
-    document.getElementById("butonDiscover3").style.transform =
-      "translate(-50% , 250%)";
+    document.getElementById("butonDiscover1").style.transform = butonHideTop;
+    document.getElementById("butonDiscover2").style.transform = butonShow;
+    document.getElementById("butonDiscover3").style.transform = butonHideBottom;
 
     var div = document.getElementById("category2");
-    div.style.width = "200vw";
-    div.style.height = "400vh";
+    div.style.width = newWidth;
+    div.style.height = newHeight;
   } else {
     var div = document.getElementById("category2");
     div.style.width = null;
@@ -43,23 +52,34 @@ function changeDivCSS() {
     document.getElementById("butonDiscover2").style.transform = null;
   }
   if (categorie > 2) {
-    document.getElementById("butonDiscover2").style.transform =
-      "translate(-50% , -350%)";
-    document.getElementById("butonDiscover3").style.transform =
-      "translate(-50% , -50%)";
+    document.getElementById("butonDiscover2").style.transform = butonHideTop;
+    document.getElementById("butonDiscover3").style.transform = butonShow;
 
     var div = document.getElementById("category3");
-    div.style.width = "200vw";
-    div.style.height = "400vh";
+    div.style.width = newWidth;
+    div.style.height = newHeight;
   } else {
     var div = document.getElementById("category3");
     div.style.width = null;
     div.style.height = null;
     document.getElementById("butonDiscover3").style.transform = null;
   }
+  if (categorie <= 0) {
+    // document.getElementById("nav-right").style.boxShadow = "0px 0px 20px white";
+    document.getElementById("nav-right").style.outline =
+      "outset 20px rgba(255,255,255,0.25)";
+  } else {
+    // document.getElementById("nav-right").style.boxShadow = null;
+    document.getElementById("nav-right").style.outline = null;
+  }
 }
 
 function slideLeft() {
+  // check if on category or project
+  if (url.searchParams.get("id")) {
+    return;
+  }
+
   if (categorie > 0) {
     categorie--;
     changeDivCSS();
@@ -71,6 +91,11 @@ function slideLeft() {
 }
 
 function slideRight() {
+  // check if on category or project
+  if (url.searchParams.get("id")) {
+    return;
+  }
+
   if (categorie < 3) {
     categorie++;
     changeDivCSS();
@@ -108,3 +133,22 @@ function openCurrentCategory() {
     });
 }
 // pages/one-work.html?category=3dProjects&id=0
+
+// move with arrows
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowLeft") {
+    if (typeof imageLeft !== "undefined") {
+      imageLeft();
+    }
+    slideLeft();
+  }
+  if (event.key === "ArrowRight") {
+    if (typeof imageRight !== "undefined") {
+      imageRight();
+    }
+    slideRight();
+  }
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    toggleNav();
+  }
+});
