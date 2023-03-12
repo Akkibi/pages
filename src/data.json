@@ -84,39 +84,23 @@
       "link": ["", ""]
     },
     {
-      "name": "background",
-      "date": "01/02/2023",
-      "title": "Fond d'écant passionnant",
-      "description": "Voici chaques étapes qui ont menés a mon fond d'écrant actuel chaque éléments sont originel de moi. Je suis partis d'une base simple, deux logos, Figma et Blender qui me passionnent (pas la place pour les multiples languages de code) les elements 3d ont été faits sur Blender et la composition sur figma.",
+      "name": "refonte-mmi",
+      "date": "5/10/2022",
+      "title": "Refonte de la ligne éditoriale de MMind",
+      "description": "Voici la participation au concours de refonte de la ligne éditoriale de MMind de mon groupe de travail.",
       "images": [
-        "v05.png",
-        "v04.png",
-        "v03.png",
-        "v02.png",
-        "v01.png",
-        "background.png",
-        "akira-valade.png"
+        "Frame22.png",
+        "Frame17.png",
+        "Frame24.png",
+        "Frame25.png",
+        "Frame26.png",
+        "Frame23.png"
       ],
       "videos": [],
-      "link": ["", ""]
-    },
-    {
-      "name": "skvry",
-      "date": "1/03/2023",
-      "title": "Charte graphique skvry",
-      "description": "Ce projet à été réalisé pour la marque skvry dont les ventes n'ont pas commencé qui est sur le marché des masques d'horreur en série limitée.",
-      "images": ["skvry.png", "maquette.png", "skvr2y.png", "skvr3y.png"],
-      "videos": [],
-      "link": ["", ""]
-    },
-    {
-      "name": "depression",
-      "date": "18/09/2022",
-      "title": "Illustration dépression",
-      "description": "Cette illustration est une partie d'un projet plus gros nomé le livre des sept mots dans lequel 7 mots forts ont été choisis à illustrer créativement.",
-      "images": ["Page2.png", "Page1.png"],
-      "videos": [],
-      "link": ["", ""]
+      "link": [
+        "https://www.instagram.com/mmind_mmi/",
+        "Compte à l'origine de la refonte."
+      ]
     },
     {
       "name": "stable-diffusion",
@@ -124,24 +108,6 @@
       "title": "Stable diffusion",
       "description": "Ce projet consistait à aider un developpeur à trouver un design pour sa page d'acceuil pour de multiples projets autour de Stable diffusion.",
       "images": ["Frame1.png", "Frame341.png", "Frame343.png"],
-      "videos": [],
-      "link": ["", ""]
-    },
-    {
-      "name": "polices",
-      "date": "01/03/2022",
-      "title": "Police sans serif et serif",
-      "description": "Voici ma première police d'écriture, basée sur des formes simples elle peut représenter une marque épurée, à formes rondes.",
-      "images": ["true.jpg", "letters.jpg", "Frame14.jpg", "see-more.jpg"],
-      "videos": [],
-      "link": ["", ""]
-    },
-    {
-      "name": "letters",
-      "date": "05/06/2022",
-      "title": "Illustration caractères",
-      "description": "Le but de cet exerice était de créer des illustrations à base uniquement de police d'ecriture, chaques courbes et angles visibles sont donc des morceaux de lettres.",
-      "images": ["Frame1.png", "original.png"],
       "videos": [],
       "link": ["", ""]
     },
@@ -207,6 +173,85 @@
         "https://drive.google.com/file/d/1ZnBO2kTXkFXPy29Gp7WRxDrfUxAalJ6g/view?usp=sharing",
         "Voir l'analyse."
       ]
+    },
+    {
+      "name": "background",
+      "date": "01/02/2023",
+      "title": "Fond d'écant des meilleurs logiciels",
+      "description": "Voici chaques étapes qui ont menés a mon fond d'écrant actuel. Je suis partis d'une base simple, deux logos, Figma et Blender qui me passionnent (pas la place pour les multiples languages de code) les elements 3d ont été faits sur Blender et la composition sur figma.",
+      "images": [
+        "v05.png",
+        "v04.png",
+        "v03.png",
+        "v02.png",
+        "v01.png",
+        "background.png",
+        "akira-valade.png"
+      ],
+      "videos": [],
+      "link": ["", ""]
+    },
+    {
+      "name": "gatesnfences",
+      "date": "16/10/2021",
+      "title": "Refonte de Gates N Fences",
+      "description": "Ce projet m'a appris à céer une identitée visuelle pour un site qui n'en à pas ou peu.",
+      "images": [
+        "logo.png",
+        "Frame25.png",
+        "Frame2.png",
+        "Frame37.png",
+        "Frame34.png",
+        "Frame24.png",
+        "Frame33.png"
+      ],
+      "videos": [],
+      "link": ["http://www.gatesnfences.com/", "Le site de Gates N Fences."]
+    },
+    {
+      "name": "skvry",
+      "date": "1/03/2023",
+      "title": "Charte graphique skvry",
+      "description": "Ce projet à été réalisé pour la marque skvry dont les ventes n'ont pas commencé qui est sur le marché des masques d'horreur en série limitée.",
+      "images": ["skvry.png", "maquette.png", "skvr2y.png", "skvr3y.png"],
+      "videos": [],
+      "link": ["", ""]
+    },
+    {
+      "name": "polices",
+      "date": "01/03/2022",
+      "title": "Police sans serif et serif",
+      "description": "Voici ma première police d'écriture, basée sur des formes simples elle peut représenter une marque épurée, à formes rondes.",
+      "images": ["true.jpg", "letters.jpg", "Frame14.jpg", "see-more.jpg"],
+      "videos": [],
+      "link": ["", ""]
+    },
+    {
+      "name": "letters",
+      "date": "05/06/2022",
+      "title": "Illustration caractères",
+      "description": "Le but de cet exerice était de créer des illustrations à base uniquement de police d'ecriture, chaques courbes et angles visibles sont donc des morceaux de lettres.",
+      "images": ["Frame1.png", "original.png"],
+      "videos": [],
+      "link": ["", ""]
+    },
+    {
+      "name": "kirby",
+      "date": "16/10/2021",
+      "title": "kirby design",
+      "description": "Ce projet m'a appris à faire des effets 3d sur figma en jouant avec les lumières.",
+      "images": ["kirby.png", "kirby-king.png"],
+      "videos": [],
+      "link": ["", ""]
+    },
+    {
+      "name": "depression",
+      "date": "18/09/2022",
+      "title": "Illustration dépression",
+      "description": "Cette illustration est une partie d'un projet plus gros nomé le livre des sept mots dans lequel 7 mots forts ont été choisis à illustrer créativement.",
+      "images": ["Page2.png", "Page1.png"],
+      "videos": [],
+      "link": ["", ""]
     }
   ]
 }
