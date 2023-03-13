@@ -24,11 +24,11 @@
   background-size: cover;
 }
 #categoryImage2 {
-  background: url(../assets/background/v05.png) repeat center;
+  background: url(../public/projects2d.png) repeat center;
   background-size: cover;
 }
 #categoryImage3 {
-  background: url(../public/comming-soon.jpg) repeat center;
+  background: url(../public/dev.png) repeat center;
   background-size: cover;
 }
 
