@@ -253,5 +253,43 @@
       "videos": [],
       "link": ["", ""]
     }
+  ],
+  "dev": [
+    {
+      "name": "nuit-de-linfo",
+      "date": "1-2/12/2022",
+      "title": "La Nuit de L'info",
+      "description": "Ce site à été créé lors de l'évènement de la nuit de l'info qui est un concours qui occure chaque année dans lequel on doit faire un site web en 24h dans un thème donné. Le thème de cette année était les MST. Ce site à été fait en JS, html, en utilisant nodeJs et git ainsi que figma pour les designs.",
+      "images": [
+        "pagedacceuil.png",
+        "acceuil.png",
+        "personnages.png",
+        "LogoTitre.png",
+        "festival.png",
+        "background-party.png",
+        "salon.png",
+        "window.png"
+      ],
+      "videos": [],
+      "link": [
+        "http://meauxlotov.poisson.butmmi.o2switch.site/",
+        "Lien du site de notre équipe meauxlotov."
+      ]
+    },
+    {
+      "name": "portrait-chinois",
+      "date": "18/03/2022",
+      "title": "Portrait Chinois",
+      "description": "Ce projet me représente (de 2021) en 8 chauses. Ce site à été créé dans le but d'en apprendre plus sur le code en js. C'est aussi le premier site avec lequel j'ai utilisé Git et Github.",
+      "images": [
+        "ecran.png",
+        "Frame3.png",
+        "Frame54.png",
+        "Frame81.png",
+        "Frame17.png"
+      ],
+      "videos": [],
+      "link": ["https://akkibi.github.io/myfirstproject/", "Lien vers le site."]
+    }
   ]
 }
