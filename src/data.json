@@ -164,7 +164,7 @@
       "description": "L'objectif de ce projet était de faire une analyse du site sur ordinateur de Leboncoin pour ajouter des fonctionalités utiles au site tout en mettant à jour ses visuels.",
       "images": [
         "Pagedacceuil.png",
-        "PageCompte.png",
+        "Pagecompte.png",
         "Pagemessage.png",
         "Pageproduit.png"
       ],
@@ -290,6 +290,21 @@
       ],
       "videos": [],
       "link": ["https://akkibi.github.io/myfirstproject/", "Lien vers le site."]
+    },
+    {
+      "name": "dataviz",
+      "date": "21/10/2022",
+      "title": "Dataviz",
+      "description": "Ce projet de groupe m'a appris à utiliser d3js pour faire de la visualisation de données. Le but de ce site est de comparer le courbe de croissance des utilisateurs de Netflix, des entrées de cinema et du covid pour y voir une corellation.",
+      "images": [
+        "Maquette-Resp-desktop-version-exportable-lisible.png",
+        "Maquette-Resp-desktop-version-exportable-lisible-2.png",
+        "Niveau-Annee-responsive.png",
+        "NiveauTrimestre-responsive.png",
+        "NiveauMois.png"
+      ],
+      "videos": [],
+      "link": ["", ""]
     }
   ]
 }
