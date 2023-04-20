@@ -1899,6 +1899,10 @@ html {
   border-radius: 0.25rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-t-full {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -2038,6 +2042,11 @@ html {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-none {
@@ -2197,6 +2206,16 @@ html {
 .px-\[2\.5vw\] {
   padding-left: 2.5vw;
   padding-right: 2.5vw;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pl-4 {
@@ -2417,6 +2436,16 @@ html {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
+}
+
+.text-blue-first {
+  --tw-text-opacity: 1;
+  color: rgb(0 19 130 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2949,8 +2978,33 @@ body[data-nav="true"] > #moveUp > #arrow-back {
   }
 }
 
+.after\:top-1\/2::after {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.after\:h-full::after {
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:bg-red-900::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .before\:hover\:text-center:hover::before {
@@ -3208,6 +3262,10 @@ body[data-nav="true"] > #moveUp > #arrow-back {
     text-decoration-line: underline;
   }
 
+  .sm\:no-underline {
+    text-decoration-line: none;
+  }
+
   .sm\:opacity-75 {
     opacity: 0.75;
   }
@@ -3226,6 +3284,10 @@ body[data-nav="true"] > #moveUp > #arrow-back {
 
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .sm\:hover\:underline:hover {
+    text-decoration-line: underline;
   }
 
   .sm\:hover\:opacity-100:hover {
