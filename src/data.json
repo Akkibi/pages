@@ -44,7 +44,7 @@
     {
       "name": "space-trou-noir",
       "date": "16/12/2022",
-      "title": "",
+      "title": "Black hole",
       "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
       "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
       "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"],

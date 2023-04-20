@@ -53,7 +53,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body class="m-0 h-screen w-screen overflow-hidden bg-black" data-nav="false">
+  <body class="m-0 overflow-x-hidden bg-black" data-nav="false">
     <div class="grid-gradient absolute inset-0 m-0 h-full w-full">
       <img
         class="absolute inset-0 m-0 h-full w-full mix-blend-multiply"
@@ -159,7 +159,7 @@
 
     <div
       id="moveUp"
-      class="font-roboto border-indigo absolute inset-0 box-border flex h-full w-full flex-col items-center justify-center overflow-hidden border-2 border-solid border-blue-first bg-black p-[5%] text-center text-xl text-white duration-500 ease-in-out sm:p-[2.5vw]"
+      class="font-roboto border-indigo absolute inset-0 box-border flex h-full w-full flex-col items-center overflow-x-hidden border-2 border-solid border-blue-first bg-black p-[5%] text-center text-xl text-white duration-500 ease-in-out sm:p-[2.5vw]"
     >
       <div class="flex flex-row items-start justify-between self-stretch">
         <img
@@ -173,10 +173,10 @@
         />
       </div>
       <div
-        class="flex flex-1 flex-col items-center justify-center gap-[2.5vh] self-stretch sm:flex-row sm:gap-[2.5vw]"
+        class="flex flex-auto flex-col items-center justify-center gap-[2.5vh] self-stretch sm:flex-row sm:gap-[2.5vw]"
       >
         <div
-          class="flex h-1/3 flex-auto flex-col items-center justify-center gap-[3vh] self-stretch sm:h-full sm:w-1/3 md:w-1/4"
+          class="flex flex-auto flex-col items-center justify-center gap-[3vh] self-stretch sm:h-full sm:w-1/3 md:w-1/4"
         >
           <div
             data-aos="fade-up"
@@ -218,32 +218,46 @@
             data-aos="fade-up"
             data-aos-easing="ease"
             data-aos-delay="500"
-            class="border-indigo w-full rounded-3xl border-2 border-solid border-blue-first bg-blue-secondary py-[3vw] px-[3vw] text-[3vw] leading-[4vw] sm:px-[2vw] sm:py-[2vw] md:text-[2vw] md:leading-[3vw] lg:text-[1.5vw] lg:leading-[2vw]"
+            class="border-indigo w-full rounded-3xl border-2 border-solid border-blue-first bg-blue-secondary py-[3vw] px-[4vw] text-[4vw] leading-[5vw] sm:px-[2vw] sm:py-[2vw] md:text-[2vw] md:leading-[3vw] lg:text-[1.5vw] lg:leading-[2vw]"
           >
             <p>
-              Bonjour, je suis un artiste passionné de création <b>3D</b> sur
-              <b>Blender</b>, <b>2D</b> sur <b>Figma</b>, ainsi que de
-              <b>design web</b> et fervant en <b>code</b>.
+              Salut, je suis un artiste passionné de création 3D sur
+              <b> Blender </b>
+              , de design web sur
+              <b> figma </b>
+              ainsi que fervent en code.
             </p>
             <br />
             <p>
-              J'ai 19 ans et je suis actuellement en <b>deuxième année</b> de
-              DUT en MMI. J'ai de l'expérience en travaillant en équipe en
-              entreprise grâce à mon stage d'observation à Delcourt et mon
-              travail en <b>CDD</b> dans une entreprise à <b>Musica</b>.
+              19 ans et actuellement en
+              <b> deuxième année </b>
+              de DUT en
+              <b> MMI </b>
+              , mes deux experiences en entreprise sont:
+            </p>
+            <br />
+            <ul>
+              <li>
+                Un stage d'observation à
+                <b> Delcourt </b>
+                ou j'ai découvert le travail en entreprise.
+              </li>
+              <li>
+                Un CDD à
+                <b> Musica </b>
+                où j'ai créé un site web de e-commerce de a à z en groupe.
+              </li>
+            </ul>
+            <br />
+            <p>
+              Ma passion pour la technologie et l'innovation me pousse à
+              explorer les dernières avancées technologiques et à me tenir au
+              courant des dernières tendances en matière de design.
             </p>
             <br />
             <p>
-              J'ai une <b>passion</b> pour la technologie et l'innovation, et
-              j'espère pouvoir utiliser mes compétences pour devenir un
-              <b>artiste VFX</b> ou un <b>designer/developpeur web</b>.
-            </p>
-            <br />
-            <p>
-              Mes compétences en developpement évoluent constamment, je suis en
-              cours d'aprentissage de react et treejs. Ce site web en est un
-              exemple, je l'ai développé. Malheureusement il ne contient pas
-              encore tous mes projets, c'est en cour de developpement.
+              Mes compétences en développement évoluent constamment, comme ce
+              portfolio.
             </p>
           </div>
           <div
@@ -261,13 +275,13 @@
               <div class="relative leading-[50px]">Instagram</div></a
             ><a
               class="flex flex-row items-center justify-center gap-[2vw] text-[inherit] [text-decoration:none]"
-              href="https://www.youtube.com/channel/UCrD4zsPRlACIAoclbBWIEmg"
+              href="https://www.linkedin.com/in/akira-valade-60956b200/"
               ><img
                 class="rounded-base relative aspect-square w-[5vw] shrink-0 sm:w-[7.5vh]"
                 alt=""
                 src="../public/icon-youtube.svg"
               />
-              <div class="relative leading-[50px]">Youtube</div></a
+              <div class="relative leading-[50px]">Linkedin</div></a
             ><a
               class="flex flex-row items-center justify-center gap-[2vw] text-[inherit] [text-decoration:none]"
               href="mailto:akiravalade@gmail.com?subject=Hello, I just saw your portfolio, "
