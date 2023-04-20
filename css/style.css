@@ -959,6 +959,14 @@ html {
   width: 0.25rem;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-\[30vw\] {
   min-width: 30vw;
 }
@@ -3135,6 +3143,10 @@ body[data-nav="true"] > #moveUp > #arrow-back {
     flex-direction: column;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:gap-\[2\.5vw\] {
     gap: 2.5vw;
   }
@@ -3319,6 +3331,10 @@ body[data-nav="true"] > #moveUp > #arrow-back {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:text-\[4\.5vw\] {
