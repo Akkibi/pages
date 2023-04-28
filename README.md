@@ -28,16 +28,6 @@ pour compiler le code de la page tailwind au repertoire css/style.css (--watch r
 
 # EN About this portfolio
 
-## Unfinished project EN
-
-Regarding my portfolio project, I am sorry that I have not been able to **finalize** it according to your expectations so far.
-
-The **school workload** was very high and put a lot of my projects on the back-burner.
-
-However, I'm doing my best to get back to it and I'm **very motivated to finish it**. This project is **very important** to me and I know that it will be very useful to me when finished.
-
-Thank you for your patience and understanding.
-
 ## Portfolio EN
 
 I created this project in order to present his work as a web developer. It includes information about his experience, projects and skills.
