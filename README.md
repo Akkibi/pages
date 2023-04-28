@@ -2,16 +2,6 @@
 
 [akkibi.github.io/portfolio/](https://akkibi.github.io/portfolio/pages/index.html)
 
-## Projet non fini FR
-
-Concernant mon projet de portfolio, je suis désolé de ne pas avoir été en mesure de **le finaliser** selon vos attentes jusqu'à présent.
-
-La **charge de travail** scolaire a été très élevée et a mis beaucoup de mes projets sur la back-burner.
-
-Cependant, je fais de mon mieux pour m'y remettre et je suis **très motivé à le finir**. Ce projet est **très important** pour moi et je sais qu'il me sera très utile une fois terminé.
-
-Merci pour votre patience et votre compréhension.
-
 ## Portfolio FR
 
 Portfolio akira valade
