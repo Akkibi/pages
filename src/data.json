@@ -30,7 +30,7 @@
       "name": "video-eiffel",
       "date": "16/12/2022",
       "title": "L'histoire de Claire Eiffel",
-      "description": "Ce projet a été produit dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a apprit a créer des scènes blender complexes en utilisant des géometry nodes.",
+      "description": "Ce projet a été produit dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a appris à créer des scènes blender complexes en utilisant des géometry nodes.",
       "images": [
         "3d-video.png",
         "image-eiffel-4.jpg",
@@ -45,7 +45,7 @@
       "name": "space-trou-noir",
       "date": "16/12/2022",
       "title": "Black hole",
-      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
+      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi qu'à utiliser certains shaders et volumes",
       "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
       "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"],
       "link": ["", ""]
@@ -115,7 +115,7 @@
       "name": "allo-infirmier",
       "date": "10/11/2022",
       "title": "Maquettes Allo Infirmier",
-      "description": "Ce projet à été de créer des maquettes d'une application de mise en relation l'infirmier à patients en suivant les directives d'un product owner.",
+      "description": "Ce projet a été de créer des maquettes d'une application de mise en relation l'infirmier à patients en suivant les directives d'un product owner.",
       "images": [
         "Frame59.png",
         "Connexion.png",
@@ -177,8 +177,8 @@
     {
       "name": "background",
       "date": "01/02/2023",
-      "title": "Fond d'écant des meilleurs logiciels",
-      "description": "Voici chaques étapes qui ont menés a mon fond d'écrant actuel. Je suis partis d'une base simple, deux logos, Figma et Blender qui me passionnent (pas la place pour les multiples languages de code) les elements 3d ont été faits sur Blender et la composition sur figma.",
+      "title": "Fond d'écan des meilleurs logiciels",
+      "description": "Voici chaques étapes qui ont menés a mon fond d'écran actuel. Je suis parti d'une base simple, deux logos, Figma et Blender qui me passionnent (pas la place pour les multiples langages de code) les elements 3d ont été faits sur Blender et la composition sur figma.",
       "images": [
         "v05.png",
         "v04.png",
@@ -195,7 +195,7 @@
       "name": "gatesnfences",
       "date": "16/10/2021",
       "title": "Refonte de Gates N Fences",
-      "description": "Ce projet m'a appris à céer une identitée visuelle pour un site qui n'en à pas ou peu.",
+      "description": "Ce projet m'a appris à céeer une identitée visuelle pour un site qui n'en a pas ou peu.",
       "images": [
         "logo.png",
         "Frame25.png",
@@ -230,7 +230,7 @@
       "name": "letters",
       "date": "05/06/2022",
       "title": "Illustration caractères",
-      "description": "Le but de cet exerice était de créer des illustrations à base uniquement de police d'ecriture, chaques courbes et angles visibles sont donc des morceaux de lettres.",
+      "description": "Le but de cet exercice était de créer des illustrations à base uniquement de police d'ecriture, chaques courbe, chaque angle visibles sont donc une partie de lettre.",
       "images": ["Frame1.png", "original.png"],
       "videos": [],
       "link": ["", ""]
@@ -248,7 +248,7 @@
       "name": "depression",
       "date": "18/09/2022",
       "title": "Illustration dépression",
-      "description": "Cette illustration est une partie d'un projet plus gros nomé le livre des sept mots dans lequel 7 mots forts ont été choisis à illustrer créativement.",
+      "description": "Cette illustration est une partie d'un projet plus gros nommé le livre des sept mots dans lequel 7 mots forts ont été choisis pour les illustrer de façon créative.",
       "images": ["Page2.png", "Page1.png"],
       "videos": [],
       "link": ["", ""]
