@@ -2,16 +2,6 @@
 
 [akkibi.github.io/portfolio/](https://akkibi.github.io/portfolio/pages/index.html)
 
-## Projet non fini FR
-
-Concernant mon projet de portfolio, je suis désolé de ne pas avoir été en mesure de **le finaliser** selon vos attentes jusqu'à présent.
-
-La **charge de travail** scolaire a été très élevée et a mis beaucoup de mes projets sur la back-burner.
-
-Cependant, je fais de mon mieux pour m'y remettre et je suis **très motivé à le finir**. Ce projet est **très important** pour moi et je sais qu'il me sera très utile une fois terminé.
-
-Merci pour votre patience et votre compréhension.
-
 ## Portfolio FR
 
 Portfolio akira valade
@@ -37,16 +27,6 @@ npm start
 pour compiler le code de la page tailwind au repertoire css/style.css (--watch recompile automatiquement la page lorsqu'il y a une sauvegarde)
 
 # EN About this portfolio
-
-## Unfinished project EN
-
-Regarding my portfolio project, I am sorry that I have not been able to **finalize** it according to your expectations so far.
-
-The **school workload** was very high and put a lot of my projects on the back-burner.
-
-However, I'm doing my best to get back to it and I'm **very motivated to finish it**. This project is **very important** to me and I know that it will be very useful to me when finished.
-
-Thank you for your patience and understanding.
 
 ## Portfolio EN
 
