@@ -53,3 +53,29 @@ function moveText(event) {
     timeline.to("#text-appear", { y: 0, duration: 0.5, opacity: 1 }, "<");
   }
 }
+
+gsap.from("#bar", {
+  width: 0,
+  duration: 2,
+  delay: 0,
+  ease: "power2.out",
+  stagger: 0.25,
+});
+
+gsap.registerEffect({
+  name: "fade",
+  defaults: { duration: 0.25 }, //defaults get applied to the "config" object passed to the effect below
+  effect: (targets, config) => {
+    return gsap.fromTo(
+      targets,
+      { opacity: 1, scale: 1, rotation: 0, duration: config.duration },
+      {
+        duration: config.duration,
+        opacity: 0,
+        repeat: 1,
+        yoyo: true,
+        ease: "power2.out",
+      }
+    );
+  },
+});
