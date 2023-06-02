@@ -1,73 +1,52 @@
 {
-  "3dProjects": [
+  "dev": [
     {
-      "name": "araignee-qui-marche",
-      "date": "29/11/2022",
-      "title": "Mr spider walkin'",
-      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une araignée.",
-      "images": ["step4.png", "no-shader.png"],
-      "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"],
-      "link": ["", ""]
-    },
-    {
-      "name": "cv-video",
-      "date": "11/01/2023",
-      "title": "My ancestors",
-      "description": "Ce projet m'a appris a faire du montage vidéo sur blender il m'a aussi appris à utiliser stable diffusion ainsi que d'autres ia de génération d'images pour la création d'image, de depth map et autres éléments.",
+      "name": "nuit-de-linfo",
+      "date": "1-2/12/2022",
+      "title": "La Nuit de L'info",
+      "description": "Ce site à été créé lors de l'évènement de la nuit de l'info qui est un concours qui occure chaque année dans lequel on doit faire un site web en 24h dans un thème donné. Le thème de cette année était les MST. Ce site à été fait en JS, html, en utilisant nodeJs et git ainsi que figma pour les designs.",
       "images": [
-        "miniature.png",
-        "end-screen.png",
-        "pinboard.png",
-        "church.png",
-        "depth.png",
-        "cadre.png",
-        "cadre-dust.png"
+        "pagedacceuil.png",
+        "acceuil.png",
+        "personnages.png",
+        "LogoTitre.png",
+        "festival.png",
+        "background-party.png",
+        "salon.png",
+        "window.png"
       ],
-      "videos": ["JpRU3J0zjig.png"],
-      "link": ["", ""]
+      "videos": [],
+      "link": [
+        "http://meauxlotov.poisson.butmmi.o2switch.site/",
+        "Lien du site de notre équipe meauxlotov."
+      ]
     },
     {
-      "name": "video-eiffel",
-      "date": "16/12/2022",
-      "title": "L'histoire de Claire Eiffel",
-      "description": "Ce projet a été produit dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a appris à créer des scènes blender complexes en utilisant des géometry nodes.",
+      "name": "portrait-chinois",
+      "date": "18/03/2022",
+      "title": "Portrait Chinois",
+      "description": "Ce projet me représente (de 2021) en 8 chauses. Ce site à été créé dans le but d'en apprendre plus sur le code en js. C'est aussi le premier site avec lequel j'ai utilisé Git et Github.",
       "images": [
-        "3d-video.png",
-        "image-eiffel-4.jpg",
-        "image-eiffel-1.jpg",
-        "image-eiffel-2.jpg",
-        "image-eiffel-3.jpg"
+        "ecran.png",
+        "Frame3.png",
+        "Frame54.png",
+        "Frame81.png",
+        "Frame17.png"
       ],
-      "videos": ["nm0cn8qMjdo.png"],
-      "link": ["", ""]
+      "videos": [],
+      "link": ["https://akkibi.github.io/myfirstproject/", "Lien vers le site."]
     },
     {
-      "name": "space-trou-noir",
-      "date": "16/12/2022",
-      "title": "Black hole",
-      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi qu'à utiliser certains shaders et volumes",
-      "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
-      "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"],
-      "link": ["", ""]
-    },
-    {
-      "name": "robot-rating",
-      "date": "10/11/2022",
-      "title": "Chilling with the boys",
-      "description": "Une animations de robots humains dans un hangar, ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
-      "images": ["hangar.png", "hangar-with-man.png"],
-      "videos": ["0j72j8q1Egg.png", "79bDVgpSPBc.png"],
-      "link": ["", ""]
-    },
-    {
-      "name": "firby",
-      "date": "25/02/2023",
-      "title": "3D Cursed worm Firby",
-      "description": "C'est mon premier personnage 3D avec des poils, un Furby étrange. Je l'ai créé avec l'intention d'en apprendre plus sur la génération de particules sur blender.",
+      "name": "dataviz",
+      "date": "21/10/2022",
+      "title": "Dataviz",
+      "description": "Ce projet de groupe m'a appris à utiliser d3js pour faire de la visualisation de données. Le but de ce site est de comparer le courbe de croissance des utilisateurs de Netflix, des entrées de cinema et du covid pour y voir une corellation.",
       "images": [
-        "firby-close-128-lighten.jpg",
-        "firby-large.jpg",
-        "firby-wireframe.jpg"
+        "Maquette-Resp-desktop-version-exportable-lisible.png",
+        "Maquette-Resp-desktop-version-exportable-lisible-2.png",
+        "Niveau-Annee-responsive.png",
+        "NiveauTrimestre-responsive.png",
+        "NiveauMois.png"
       ],
       "videos": [],
       "link": ["", ""]
@@ -254,54 +233,75 @@
       "link": ["", ""]
     }
   ],
-  "dev": [
+  "3dProjects": [
     {
-      "name": "nuit-de-linfo",
-      "date": "1-2/12/2022",
-      "title": "La Nuit de L'info",
-      "description": "Ce site à été créé lors de l'évènement de la nuit de l'info qui est un concours qui occure chaque année dans lequel on doit faire un site web en 24h dans un thème donné. Le thème de cette année était les MST. Ce site à été fait en JS, html, en utilisant nodeJs et git ainsi que figma pour les designs.",
-      "images": [
-        "pagedacceuil.png",
-        "acceuil.png",
-        "personnages.png",
-        "LogoTitre.png",
-        "festival.png",
-        "background-party.png",
-        "salon.png",
-        "window.png"
-      ],
-      "videos": [],
-      "link": [
-        "http://meauxlotov.poisson.butmmi.o2switch.site/",
-        "Lien du site de notre équipe meauxlotov."
-      ]
+      "name": "araignee-qui-marche",
+      "date": "29/11/2022",
+      "title": "Mr spider walkin'",
+      "description": "Ce projet m'a appris à créer une animation procédurale de marche pour une araignée.",
+      "images": ["step4.png", "no-shader.png"],
+      "videos": ["tTwpU5etMNE.png", "_X9301nrFYA.png", "XbXeqAd5QDg.png"],
+      "link": ["", ""]
     },
     {
-      "name": "portrait-chinois",
-      "date": "18/03/2022",
-      "title": "Portrait Chinois",
-      "description": "Ce projet me représente (de 2021) en 8 chauses. Ce site à été créé dans le but d'en apprendre plus sur le code en js. C'est aussi le premier site avec lequel j'ai utilisé Git et Github.",
+      "name": "cv-video",
+      "date": "11/01/2023",
+      "title": "My ancestors",
+      "description": "Ce projet m'a appris a faire du montage vidéo sur blender il m'a aussi appris à utiliser stable diffusion ainsi que d'autres ia de génération d'images pour la création d'image, de depth map et autres éléments.",
       "images": [
-        "ecran.png",
-        "Frame3.png",
-        "Frame54.png",
-        "Frame81.png",
-        "Frame17.png"
+        "miniature.png",
+        "end-screen.png",
+        "pinboard.png",
+        "church.png",
+        "depth.png",
+        "cadre.png",
+        "cadre-dust.png"
       ],
-      "videos": [],
-      "link": ["https://akkibi.github.io/myfirstproject/", "Lien vers le site."]
+      "videos": ["JpRU3J0zjig.png"],
+      "link": ["", ""]
     },
     {
-      "name": "dataviz",
-      "date": "21/10/2022",
-      "title": "Dataviz",
-      "description": "Ce projet de groupe m'a appris à utiliser d3js pour faire de la visualisation de données. Le but de ce site est de comparer le courbe de croissance des utilisateurs de Netflix, des entrées de cinema et du covid pour y voir une corellation.",
+      "name": "video-eiffel",
+      "date": "16/12/2022",
+      "title": "L'histoire de Claire Eiffel",
+      "description": "Ce projet a été produit dans le cadre d'un travail à l'université Gustave Eiffel. L'objectif du projet est de faire un podcast sur le thème de la femme de Gustave Eiffel, pour ce faire j'ai du prendre rendez-vous avec Savun Yeatman Eiffel ainsi que faire des visuels en 3d pour l'illustrer. Ce projet m'a appris à créer des scènes blender complexes en utilisant des géometry nodes.",
       "images": [
-        "Maquette-Resp-desktop-version-exportable-lisible.png",
-        "Maquette-Resp-desktop-version-exportable-lisible-2.png",
-        "Niveau-Annee-responsive.png",
-        "NiveauTrimestre-responsive.png",
-        "NiveauMois.png"
+        "3d-video.png",
+        "image-eiffel-4.jpg",
+        "image-eiffel-1.jpg",
+        "image-eiffel-2.jpg",
+        "image-eiffel-3.jpg"
+      ],
+      "videos": ["nm0cn8qMjdo.png"],
+      "link": ["", ""]
+    },
+    {
+      "name": "space-trou-noir",
+      "date": "16/12/2022",
+      "title": "Black hole",
+      "description": "Ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi qu'à utiliser certains shaders et volumes",
+      "images": ["miniature.png", "spaceship.png", "trou-noir.png"],
+      "videos": ["NQF0whHEVkY.png", "Dt3rhUTB5qA.png"],
+      "link": ["", ""]
+    },
+    {
+      "name": "robot-rating",
+      "date": "10/11/2022",
+      "title": "Chilling with the boys",
+      "description": "Une animations de robots humains dans un hangar, ce projet m'a appris a utiliser du compositing pour accélerer la production d'un plan ainsi que l'utilisation de certains shaders et volumes",
+      "images": ["hangar.png", "hangar-with-man.png"],
+      "videos": ["0j72j8q1Egg.png", "79bDVgpSPBc.png"],
+      "link": ["", ""]
+    },
+    {
+      "name": "firby",
+      "date": "25/02/2023",
+      "title": "3D Cursed worm Firby",
+      "description": "C'est mon premier personnage 3D avec des poils, un Furby étrange. Je l'ai créé avec l'intention d'en apprendre plus sur la génération de particules sur blender.",
+      "images": [
+        "firby-close-128-lighten.jpg",
+        "firby-large.jpg",
+        "firby-wireframe.jpg"
       ],
       "videos": [],
       "link": ["", ""]
