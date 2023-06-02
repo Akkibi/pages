@@ -4,7 +4,6 @@ const toggleNav = () => {
   document.body.dataset.nav =
     document.body.dataset.nav === "true" ? "false" : "true";
 };
-AOS.init();
 
 var categorie = 0;
 var url = new URL(window.location.href);
