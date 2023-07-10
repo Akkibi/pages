@@ -1,6 +1,18 @@
 {
   "dev": [
     {
+      "name": "gallerie-des-reves",
+      "date": "1-2/12/2022",
+      "title": "Gallerie des Rêves",
+      "description": "Ce site à été créé dans le cadre d'un projet scolaire dans lequel je me suis chargé de créer un dispositif interractif pour une exposition de notre agence d'expositions. Ce site a été fait avec Three Js et Tailwind,  en utilisant git ainsi que figma pour les designs.",
+      "images": ["affiche.png", "affiche-vide.png"],
+      "videos": ["1VQM0jca-FQ.png"],
+      "link": [
+        "https://akkibi.github.io/SAE-S4-dispositif-interactif/",
+        "Lien du site du dispositif"
+      ]
+    },
+    {
       "name": "nuit-de-linfo",
       "date": "1-2/12/2022",
       "title": "La Nuit de L'info",
@@ -159,6 +171,7 @@
       "title": "Fond d'écan des meilleurs logiciels",
       "description": "Voici chaques étapes qui ont menés a mon fond d'écran actuel. Je suis parti d'une base simple, deux logos, Figma et Blender qui me passionnent (pas la place pour les multiples langages de code) les elements 3d ont été faits sur Blender et la composition sur figma.",
       "images": [
+        "background-new",
         "v05.png",
         "v04.png",
         "v03.png",
