@@ -1,6 +1,15 @@
 {
   "dev": [
     {
+      "name": "SLAPPING",
+      "date": "12/06/2023",
+      "title": "Redesign Media Slapping",
+      "description": "Ce projet à été réalisé dans le cadre d'un stage de deux mois dans l'entreprise PAY ME NOW Production. La dernière image de cette page est le design du site avant que j'en propose un autre à l'équipe et que je le développe. La première image est le design final validé par le DJ Moh green et le reste sont des maquettes. Le site serà en ligne fin 2023",
+      "images": ["homepage.png", "affiche-vide.png"],
+      "videos": ["1VQM0jca-FQ.png"],
+      "link": ["https://slapping.fr/", "Lien vers le site de Slapping"]
+    },
+    {
       "name": "gallerie-des-reves",
       "date": "1-2/12/2022",
       "title": "Gallerie des Rêves",
